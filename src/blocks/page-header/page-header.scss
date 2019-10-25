@@ -1,0 +1,38 @@
+// В этом файле должны быть стили только для БЭМ-блока page-header, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.page-header {
+
+  $block-name: &; // #{$block-name}
+
+  @include media-breakpoint-up(xs) {}
+  @include media-breakpoint-up(sm) {}
+  @include media-breakpoint-up(md) {}
+  @include media-breakpoint-up(lg) {}
+  @include media-breakpoint-up(xl) {}
+
+  &__inner {
+    @include media-breakpoint-up(xs) {}
+    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(xl) {}
+  }
+
+  .navbar {
+    
+  }
+
+  &__toggle {
+    
+  }
+
+  &__info {
+
+    @include media-breakpoint-up(xs) {}
+    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(lg) {}
+  }
+}
