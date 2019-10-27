@@ -13,11 +13,11 @@
     color: #ffffff;
     background-color: #ff9110;
     border: none;
-    padding: 12px 26px 10px 26px;
+    padding: 12px 26px 12px 26px;
     border-radius: 21px;
     letter-spacing: 0.2px;
     text-transform: uppercase;
-    box-shadow: 0px 2px 0px 0px #ef7317;
+    box-shadow: inset 0px -2px 0px 0px #ef7317;
     outline: none !important;
 
     @include media-breakpoint-up(md) {
@@ -26,7 +26,7 @@
     &:hover,
     &:focus {
       background-color: #ff9110;
-      box-shadow: 0px 2px 0px 0px #ef7317;
+      box-shadow: inset 0px -2px 0px 0px #ef7317;
     }
 
     &:active {
@@ -36,7 +36,7 @@
       background-color: #ff9110;
 
       &:focus {
-        box-shadow: 0px 2px 0px 0px #ef7317;
+        box-shadow: inset 0px -2px 0px 0px #ef7317;
       }
     }
   }

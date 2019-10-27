@@ -19,8 +19,6 @@
       if (isIE) document.documentElement.classList.add('ie');
     </script>
 
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-
   </head>
   <body>
     <div class="page__inner">
@@ -143,17 +141,6 @@
               <div class="container">
                 <div class="page-header__nav">
                   <div class="dropdown menu-mobile">
-                    <!-- <button
-                      class="btn btn-light dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span class="icon"></span>
-                      Услуги
-                    </button> -->
                     <button
                       class="btn btn-light navbar-toggler"
                       type="button"
@@ -165,13 +152,7 @@
                     >
                       <span class="icon"></span>
                       Услуги
-                      <!-- <span class="navbar-toggler-icon"></span> -->
                     </button>
-                    <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div> -->
                   </div>
                   <ul class="navbar navbar--menu">
                     <li>
@@ -185,11 +166,13 @@
                         О клинике
                       </button>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
+                        <a class="dropdown-item" href="#">Вакансии</a>
+                        <a class="dropdown-item" href="#">Лицензии</a>
+                        <a class="dropdown-item" href="#">Оборудование</a>
+                        <a class="dropdown-item" href="#">Галерея</a>
+                        <a class="dropdown-item" href="#">Расписание</a>
+                        <a class="dropdown-item" href="#">Отзывы</a>
+                        <a class="dropdown-item" href="#">Статьи</a>
                       </div>
                     </li>
                     <li>
@@ -216,51 +199,107 @@
             id="navbarSupportedContent"
           >
             <div class="container">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
+              <ul class="navbar-nav navbar-nav--menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Dropdown
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-cleaning"></use>
+                      </svg>
+                    </div>
+
+                    Гигиена полости рта
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                    >Disabled</a
-                  >
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-bright"></use>
+                      </svg>
+                    </div>
+
+                    Отбеливание зубов
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-simple2"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-braces"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-implement"></use>
+                      </svg>
+                    </div>
+
+                    Гигиена полости рта
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-screw2"></use>
+                      </svg>
+                    </div>
+
+                    Отбеливание зубов
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-search"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite-svg.svg#tooth-pulling"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon" width="35px" height="40px">
+                        <use xlink:href="img/sprite-svg.svg#tooth-screw2"></use>
+                      </svg>
+                    </div>
+
+                    Протезирование зубов
+                  </a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
 

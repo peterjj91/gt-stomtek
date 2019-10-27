@@ -5,7 +5,8 @@
 .page-header {
   $block-name: &; // #{$block-name}
   position: relative;
-  border-bottom: 2px solid #edf2f5;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #edf2f5;
 
   @include media-breakpoint-up(xs) {
   }
