@@ -3,6 +3,10 @@
 
 .h1,
 h1 {
+  font-family: $font-pt-serif;
+  font-size: 37px;
+  line-height: 41px;
+
   @include media-breakpoint-up(md) {
   }
 }
