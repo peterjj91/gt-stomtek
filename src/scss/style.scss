@@ -7,6 +7,7 @@
 @import './src/scss/variables.scss';
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 @import './node_modules/slick-carousel/slick/slick.scss';
+@import './node_modules/bootstrap-select/sass/bootstrap-select.scss';
 @import './src/blocks/default/default.scss';
 @import './src/blocks/page/page.scss';
 @import './src/blocks/typo/typo.scss';
@@ -26,3 +27,8 @@
 @import './src/blocks/view-main/view-main.scss';
 @import './src/blocks/quick-card/quick-card.scss';
 @import './src/blocks/profile-card/profile-card.scss';
+@import './src/blocks/navbar/navbar.scss';
+@import './src/blocks/select-promo/select-promo.scss';
+@import './src/blocks/images/images.scss';
+@import './src/blocks/nav-quick/nav-quick.scss';
+@import './src/blocks/menu-mobile/menu-mobile.scss';

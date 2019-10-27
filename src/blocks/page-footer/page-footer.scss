@@ -1,20 +1,30 @@
 .page-footer {
   $block-name: &;
 
-  @include media-breakpoint-up(xs) {}
-  @include media-breakpoint-up(sm) {}
-  @include media-breakpoint-up(md) {}
-  @include media-breakpoint-up(lg) {}
-  @include media-breakpoint-up(xl) {}
-
-  &__inner {
-
-    @include media-breakpoint-up(xs) {}
-    @include media-breakpoint-up(sm) {}
-    @include media-breakpoint-up(md) {}
-    @include media-breakpoint-up(lg) {}
-    @include media-breakpoint-up(xl) {}
+  @include media-breakpoint-up(xs) {
+  }
+  @include media-breakpoint-up(sm) {
+  }
+  @include media-breakpoint-up(md) {
+  }
+  @include media-breakpoint-up(lg) {
+  }
+  @include media-breakpoint-up(xl) {
   }
 
-  &__content {}
+  &__inner {
+    @include media-breakpoint-up(xs) {
+    }
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-up(md) {
+    }
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+    }
+  }
+
+  &__content {
+  }
 }

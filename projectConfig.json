@@ -18,12 +18,18 @@
     "review-card": [],
     "view-main": [],
     "quick-card": [],
-    "profile-card": []
+    "profile-card": [],
+    "navbar": [],
+    "select-promo": [],
+    "images": [],
+    "nav-quick": [],
+    "menu-mobile": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./node_modules/bootstrap/scss/bootstrap.scss",
-    "./node_modules/slick-carousel/slick/slick.scss"
+    "./node_modules/slick-carousel/slick/slick.scss",
+    "./node_modules/bootstrap-select/sass/bootstrap-select.scss"
   ],
   "addCssAfter": [],
   "singleCompiled": [],
@@ -32,7 +38,8 @@
     "./node_modules/object-fit-images/dist/ofi.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/bootstrap/dist/js/bootstrap.js",
-    "./node_modules/slick-carousel/slick/slick.js"
+    "./node_modules/slick-carousel/slick/slick.js",
+    "./node_modules/bootstrap-select/dist/js/bootstrap-select.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"

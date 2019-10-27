@@ -1,35 +1,84 @@
-// В этом файле должны быть стили для БЭМ-блока btn, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока btn, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .btn {
   $block-name: &; // #{$block-name}__element {}
-  border-radius: 0px;
-  padding: 11px 16px 12px 16px;
-  font-size: 13px;
 
-  @include media-breakpoint-up(lg) {}
+  @include media-breakpoint-up(lg) {
+  }
 
   &-primary {
-    @include media-breakpoint-up(md) {}
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ff9110;
+    border: none;
+    padding: 12px 26px 10px 26px;
+    border-radius: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 0px 0px #ef7317;
+    outline: none !important;
 
-    &:hover, &:focus {}
+    @include media-breakpoint-up(md) {
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ff9110;
+      box-shadow: 0px 2px 0px 0px #ef7317;
+    }
+
+    &:active {
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      background-color: #ff9110;
+
+      &:focus {
+        box-shadow: 0px 2px 0px 0px #ef7317;
+      }
+    }
   }
 
   &-info {
-    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(md) {
+    }
 
-    &:hover, &:focus {}
+    &:hover,
+    &:focus {
+    }
   }
 
   &-light {
-    @include media-breakpoint-up(md) {}
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
 
-    &:hover, &:focus {}
+    @include media-breakpoint-up(md) {
+    }
 
-    &:not(:disabled):not(.disabled):active:focus, 
-    &:not(:disabled):not(.disabled).active:focus {}
+    &:hover,
+    &:focus {
+    }
+
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled).active:focus {
+      box-shadow: none;
+    }
   }
 
-  &.disabled, disabled {}
+  &.disabled,
+  disabled {
+  }
+}
+
+.dropdown-toggle {
+  &:after {
+    @include sprite($dropdown-pointer);
+    vertical-align: middle;
+    border: none;
+    margin-top: -2px;
+    margin-left: 2px;
+  }
 }

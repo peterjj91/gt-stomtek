@@ -1,0 +1,31 @@
+.menu-mobile {
+  $block-name: &; // #{$block-name}__element {}
+
+  .btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px 14px 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a545b;
+    box-shadow: none !important;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    @include sprite($burger);
+    margin-right: 10px;
+  }
+
+  &.show {
+    .btn {
+      background-color: transparent;
+      color: #4a545b;
+    }
+  }
+}

@@ -4,63 +4,68 @@ More: https://www.npmjs.com/package/gulp-file-include
 -->
 
 <div class="page-header__inner">
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">
-      <div class="icon-logo"></div>
-    </a>
+  <nav class="navbar navbar--header">
+    <div class="page-header__info">
+      <div class="container d-flex justify-content-between">
+        <ul class="page-header__info__list">
+          <li>
+            <svg class="icon icon-location icon-location--mini">
+              <use xlink:href="img/sprite-svg.svg#location"></use>
+            </svg>
 
-    <div class="page-header__toggle" data-toggle="modal" data-target="#mobile-menu">
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+            <span>г. Курск, ул. Карла Маркса, 49</span>
+          </li>
+          <li>
+            <svg class="icon icon-clock icon-clock--mini">
+              <use xlink:href="img/sprite-svg.svg#clock"></use>
+            </svg>
+
+            <span>пн-пт: с 9:00 до 18:00</span>
+          </li>
+          <li>
+            <div class="page-header__call">
+              <a href="tel:74712238223" class="page-header__call__phone">
+                <svg class="icon icon-phone icon-phone--mini">
+                  <use xlink:href="img/sprite-svg.svg#phone-copy"></use>
+                </svg>
+                7 (4712) 23-82-23
+              </a>
+              <a href="#" class="page-header__call__text">
+                Заказать звонок
+              </a>
+            </div>
+          </li>
+          <li>
+            @@include('./../select-promo/select-promo-lang.html')
+          </li>
+        </ul>
       </div>
-
-      <div class="page-header__toggle__text">Меню</div>
     </div>
 
-    <a href="tel:+77232223322" class="navbar__phone">
-      <svg class="icon svg-phone"><use xlink:href="img/sprite-svg.svg#phone"></use></svg>+ 7 (723) 222-33-22
-    </a>
+    <div class="page-header__main__wrapper">
+      <div class="container">
+        <div class="page-header__main">
+          <a href="#" class="page-header__logo">
+            @@include('./../logo/logo--main.html')
+          </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="page-header__info">
-        <li>
-          <div class="dropdown dropdown-main">
-            <button class="dropdown-toggle dropdown-main__toggle"
-                    type="button" 
-                    id="dropdownMenuButton" 
-                    data-toggle="dropdown" 
-                    aria-haspopup="true" 
-                    aria-expanded="false">
-              <svg class="icon svg-location"><use xlink:href="img/sprite-svg.svg#location"></use></svg>
-              г.Рязань (г.Щадринск)
-            </button>
-            <div class="dropdown-menu dropdown-main__menu" aria-labelledby="dropdownMenuButton">
-              <div class="dropdown-item dropdown-main__item">
-                г.Рязань (г.Щадринск)
-              </div>
-              <div class="dropdown-item dropdown-main__item">
-                г.Рязань (г.Щадринск)
-              </div>
-            </div>
+          <div class="page-header__nav-quick">
+            @@include('./../nav-quick/nav-quick--header.html')
           </div>
-        </li>
-        <li>
-          <a href="tel:+77232223322">
-            <svg class="icon svg-phone"><use xlink:href="img/sprite-svg.svg#phone"></use></svg>+ 7 (723) 222-33-22
-          </a>
-        </li>
-        <li>
-          <a href="mailto:test@t-zinc.ru">
-            <span class="icon icon-email"></span>test@t-zinc.ru
-          </a>
-        </li>
-      </ul>
-      
-      <a href="#" class="btn btn-light" data-toggle="modal" data-target="#make-order">Сделать заказ</a>
-      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#review">Написать руководству</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-header__nav__wrapper">
+      <div class="container">
+        <div class="page-header__nav">
+          @@include('./../menu-mobile/menu-mobile.html')
+          @@include('./../navbar/navbar--header.html')
+          <a href="#" class="btn btn-primary">Запись на прием</a>
+        </div>
+      </div>
     </div>
   </nav>
+
+  @@include('./../navbar/navbar--mobile.html')
 </div>

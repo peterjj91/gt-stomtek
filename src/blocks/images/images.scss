@@ -1,0 +1,45 @@
+.icon-location {
+  fill: #ff961a;
+
+  &--mini {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.icon-clock {
+  fill: #ff961a;
+
+  &--mini {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.icon-phone {
+  // background-color: #ff961a;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon-lang-ru {
+  @include sprite($lang-ru);
+  display: inline-block;
+}
+
+.icon-lang-en {
+  @include sprite($lang-en);
+  display: inline-block;
+}
+
+.icon-burger {
+  @include sprite($burger);
+}
+
+.icon-close {
+  @include sprite($close);
+}

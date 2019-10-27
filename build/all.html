@@ -1,106 +1,290 @@
 <!DOCTYPE html>
 <html class="no-js  page" lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Все страницы</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
+  <head>
+    <meta charset="utf-8" />
+    <title>Все страницы</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
 
-  <link href="css/style.min.css?1" rel="stylesheet" media="screen">
+    <link href="css/style.min.css?1" rel="stylesheet" media="screen" />
 
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    var ua = window.navigator.userAgent.toLowerCase(),
-    isIE = (/trident/gi).test(ua) || (/msie/gi).test(ua);
-    if(isIE) document.documentElement.classList.add('ie');
-  </script>
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(
+        'no-js',
+        'js'
+      );
+      var ua = window.navigator.userAgent.toLowerCase(),
+        isIE = /trident/gi.test(ua) || /msie/gi.test(ua);
+      if (isIE) document.documentElement.classList.add('ie');
+    </script>
 
-  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
 
-</head>
-<body>
-  <div class="page__inner">
-    <header class="page-header page-header--white" role="banner">
+  </head>
+  <body>
+    <div class="page__inner">
+      <header class="page-header page-header--white" role="banner">
 
-      <div class="page-header__inner">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">
-            <div class="icon-logo"></div>
-          </a>
+        <div class="page-header__inner">
+          <nav class="navbar navbar--header">
+            <div class="page-header__info">
+              <div class="container d-flex justify-content-between">
+                <ul class="page-header__info__list">
+                  <li>
+                    <svg class="icon icon-location icon-location--mini">
+                      <use xlink:href="img/sprite-svg.svg#location"></use>
+                    </svg>
 
-          <div class="page-header__toggle" data-toggle="modal" data-target="#mobile-menu">
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+                    <span>г. Курск, ул. Карла Маркса, 49</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon-clock icon-clock--mini">
+                      <use xlink:href="img/sprite-svg.svg#clock"></use>
+                    </svg>
+
+                    <span>пн-пт: с 9:00 до 18:00</span>
+                  </li>
+                  <li>
+                    <div class="page-header__call">
+                      <a href="tel:74712238223" class="page-header__call__phone">
+                        <svg class="icon icon-phone icon-phone--mini">
+                          <use xlink:href="img/sprite-svg.svg#phone-copy"></use>
+                        </svg>
+                        7 (4712) 23-82-23
+                      </a>
+                      <a href="#" class="page-header__call__text">
+                        Заказать звонок
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <select class="select-promo show-menu-arrow" data-width="fit">
+                      <option data-content="<span class='icon icon-lang-ru'></span> Ru"></option>
+                      <option data-content="<span class='icon icon-lang-en'></span> En"></option>
+                    </select>
+
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div class="page-header__toggle__text">Меню</div>
-          </div>
+            <div class="page-header__main__wrapper">
+              <div class="container">
+                <div class="page-header__main">
+                  <a href="#" class="page-header__logo">
 
-          <a href="tel:+77232223322" class="navbar__phone">
-            <svg class="icon svg-phone"><use xlink:href="img/sprite-svg.svg#phone"></use></svg>+ 7 (723) 222-33-22
-          </a>
+                    <div class="logo logo--main"></div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="page-header__info">
-              <li>
-                <div class="dropdown dropdown-main">
-                  <button class="dropdown-toggle dropdown-main__toggle"
-                          type="button" 
-                          id="dropdownMenuButton" 
-                          data-toggle="dropdown" 
-                          aria-haspopup="true" 
-                          aria-expanded="false">
-                    <svg class="icon svg-location"><use xlink:href="img/sprite-svg.svg#location"></use></svg>
-                    г.Рязань (г.Щадринск)
-                  </button>
-                  <div class="dropdown-menu dropdown-main__menu" aria-labelledby="dropdownMenuButton">
-                    <div class="dropdown-item dropdown-main__item">
-                      г.Рязань (г.Щадринск)
-                    </div>
-                    <div class="dropdown-item dropdown-main__item">
-                      г.Рязань (г.Щадринск)
-                    </div>
+                  </a>
+
+                  <div class="page-header__nav-quick">
+                    <ul class="nav-quick nav-quick--header">
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <svg class="icon">
+                              <use xlink:href="img/sprite-svg.svg#tooth-simple"></use>
+                            </svg>
+                          </div>
+                          <div class="nav-quick__text">Лечение зубов</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <svg class="icon">
+                              <use xlink:href="img/sprite-svg.svg#tooth-braces"></use>
+                            </svg>
+                          </div>
+                          <div class="nav-quick__text">Брекеты</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <svg class="icon">
+                              <use xlink:href="img/sprite-svg.svg#tooth-search"></use>
+                            </svg>
+                          </div>
+                          <div class="nav-quick__text">Ортодонтия</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <svg class="icon">
+                              <use xlink:href="img/sprite-svg.svg#tooth-simple"></use>
+                            </svg>
+                          </div>
+                          <div class="nav-quick__text">Протезирование</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <svg class="icon">
+                              <use xlink:href="img/sprite-svg.svg#tooth-simple2"></use>
+                            </svg>
+                          </div>
+                          <div class="nav-quick__text">
+                            детская стоматология
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+
                   </div>
                 </div>
-              </li>
-              <li>
-                <a href="tel:+77232223322">
-                  <svg class="icon svg-phone"><use xlink:href="img/sprite-svg.svg#phone"></use></svg>+ 7 (723) 222-33-22
-                </a>
-              </li>
-              <li>
-                <a href="mailto:test@t-zinc.ru">
-                  <span class="icon icon-email"></span>test@t-zinc.ru
-                </a>
-              </li>
-            </ul>
-      
-            <a href="#" class="btn btn-light" data-toggle="modal" data-target="#make-order">Сделать заказ</a>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#review">Написать руководству</a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    
-    <div class="">
-      content
-    </div>
+              </div>
+            </div>
 
-    <div class="page__footer-wrapper">
+            <div class="page-header__nav__wrapper">
+              <div class="container">
+                <div class="page-header__nav">
+                  <div class="dropdown menu-mobile">
+                    <!-- <button
+                      class="btn btn-light dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span class="icon"></span>
+                      Услуги
+                    </button> -->
+                    <button
+                      class="btn btn-light navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="icon"></span>
+                      Услуги
+                      <!-- <span class="navbar-toggler-icon"></span> -->
+                    </button>
+                    <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div> -->
+                  </div>
+                  <ul class="navbar navbar--menu">
+                    <li>
+                      <button
+                        type="button"
+                        class="btn btn-light dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        О клинике
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Цены</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Доктора</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Акции</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Контакты</a>
+                    </li>
+                  </ul>
 
-      <footer class="page-footer" role="contentinfo">
-        <div class="page-footer__inner">
-          <div class="container">
-            footer
+                  <a href="#" class="btn btn-primary">Запись на прием</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="collapse navbar-collapse navbar-collapse--mobile"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                    >Disabled</a
+                  >
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
+
         </div>
-      </footer>
+
+      </header>
+
+      <div class="">
+        content
+      </div>
+
+      <div class="page__footer-wrapper">
+
+        <footer class="page-footer" role="contentinfo">
+          <div class="page-footer__inner">
+            <div class="container">
+              footer
+            </div>
+          </div>
+        </footer>
+
+      </div>
     </div>
-  </div>
-  <script src="js/script.min.js?1"></script>
-</body>
+    <script src="js/script.min.js?1"></script>
+
+  </body>
 </html>

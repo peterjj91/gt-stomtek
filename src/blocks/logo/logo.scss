@@ -1,4 +1,10 @@
-
-logo {
+.logo {
   $block-name: &; // #{$block-name}__element {}
+  display: inline-block;
+
+  &--main {
+    background-image: url(./../img/logo.png);
+    width: 263px;
+    height: 80px;
+  }
 }

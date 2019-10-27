@@ -1,21 +1,36 @@
 // font
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic-ext');
-
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic');
+$font-pt-serif: 'PT Serif', serif;
 $open-sans: 'Open Sans', sans-serif;
-$font-family-sans-serif: $open-sans;
+$font-arial: Arial;
+$font-family-sans-serif: $font-arial;
 
-$grid-columns:      12;
+$grid-columns: 12;
 $grid-gutter-width: 30px;
 
-$screen-sm: 576px;
-$screen-md: 768px;
-$screen-lg: 992px;
-$screen-xl: 1400px;
-$screen-xxl: 1700px;
+$grid-breakpoints: (
+  // Extra small screen / phone
+    xs: 0,
+  // Small screen / phone
+    sm: 576px,
+  // Medium screen / tablet
+    md: 768px,
+  // Large screen / desktop
+    lg: 992px,
+  // Extra large screen / wide desktop
+    xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+);
 
 // color: var(--blue);
 
-// media 
+// media
 // @include media-breakpoint-up(sm) {}
 // @include media-breakpoint-up(md) {}
 // @include media-breakpoint-up(lg) {}
@@ -26,7 +41,7 @@ $screen-xxl: 1700px;
 // @include media-breakpoint-down(md) {}
 // @include media-breakpoint-down(lg) {}
 
-// grid 
+// grid
 // .col- .col-sm-  .col-md-  .col-lg-  .col-xl-
 // .col- .col-6    .col-
 // .col- .col-     .col-
@@ -44,18 +59,9 @@ $screen-xxl: 1700px;
 // @include make-col-offset($size, $columns: $grid-columns);
 
 // color
-$color-dark: #787E8D;
-$color-darkness: #303033;
-$color-dust: #3A3B40;
-$color-space: #252528;
-$color-light: #515153;
-$color-lighter: #97A0B2;
-$color-ocean: #205ad0;
-$color-river: #EDF4F8;
-$color-shadow: #EAECF0;
 
 .container {
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     padding-right: 15px;
     padding-left: 15px;
   }
