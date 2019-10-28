@@ -23,7 +23,8 @@
     "select-promo": [],
     "images": [],
     "nav-quick": [],
-    "menu-mobile": []
+    "menu-mobile": [],
+    "view-services": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

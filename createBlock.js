@@ -36,7 +36,7 @@ if (blockName) {
 
         // If it is SCSS
         if (extention === 'scss') {
-          fileContent = `\n.${blockName} {\n\n  $block-name: &; // #{$block-name}__element {}\n}\n`;
+          fileContent = `\n.${blockName} {\n$block-name: &; // #{$block-name}__element {}\n}\n`;
           // fileCreateMsg = '';
 
           // Add the created file.

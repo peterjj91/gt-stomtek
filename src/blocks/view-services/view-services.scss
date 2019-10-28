@@ -1,0 +1,10 @@
+.view-services {
+  $block-name: &; // #{$block-name}__element {}
+  padding: 68px 0px 62px 0px;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+}

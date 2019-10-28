@@ -4,6 +4,14 @@ $(document).ready(function() {
   $('.select-promo').selectpicker();
 });
 
+$(document).ready(function() {
+  $('.slider-services').slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  });
+});
+
 // $(document).ready(function() {
 //   $('.multiple-items').slick({
 //     infinite: false,
