@@ -4,6 +4,7 @@
 
 .page-header {
   $block-name: &; // #{$block-name}
+  min-width: 1300px;
   position: relative;
   padding-bottom: 1px;
   border-bottom: 1px solid #edf2f5;
@@ -68,6 +69,21 @@
 
     .icon {
       margin-right: 3px;
+
+      &.icon-location {
+        margin-left: -2px;
+        margin-right: 3px;
+      }
+
+      &.icon-clock {
+        margin-right: 6px;
+        margin-left: 0px;
+      }
+
+      &.icon-phone {
+        margin-right: 8px;
+        margin-left: 0px;
+      }
     }
   }
 
@@ -76,6 +92,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: -3px;
 
     &__wrapper {
       width: 100%;
@@ -87,6 +104,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
+    letter-spacing: -0.1px;
 
     & > * {
       &:after {
