@@ -1,9 +1,8 @@
-
 .article-quick {
   $block-name: &; // #{$block-name}__element {}
   height: 528px;
   position: relative;
-  
+
   &__img {
     position: absolute;
     top: 0;

@@ -25,7 +25,7 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    asNavFor: '.slider-full-nav'
+    asNavFor: '.slider-full-nav',
   });
   $('.slider-full-nav').slick({
     slidesToShow: 1,
@@ -33,7 +33,7 @@ $(document).ready(function() {
     arrows: false,
     fade: true,
     asNavFor: '.slider-full-for',
-    focusOnSelect: true
+    focusOnSelect: true,
   });
 });
 
