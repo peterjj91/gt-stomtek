@@ -24,7 +24,9 @@
     "images": [],
     "nav-quick": [],
     "menu-mobile": [],
-    "view-services": []
+    "view-services": [],
+    "view-slider-full": [],
+    "article-quick": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
