@@ -26,7 +26,13 @@
     "menu-mobile": [],
     "view-services": [],
     "view-slider-full": [],
-    "article-quick": []
+    "article-quick": [],
+    "card-promo": [],
+    "view-price-list": [],
+    "view-doctors": [],
+    "view-review": [],
+    "view-license": [],
+    "view-article": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
