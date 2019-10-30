@@ -1,3 +1,60 @@
-review-card {
+.review-card {
   $block-name: &; // #{$block-name}__element {}
+  background-color: #edf2f5;
+  border: 7px solid white;
+  padding: 15px 20px 15px 23px;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  font-family: $font-pt-serif;
+  min-height: 380px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 10px;
+
+  &__rate {
+    color: #ff9110;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__icon {
+    display: inline-block;
+    background-color: #ff9110;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    height: 27px;
+    min-width: 49px;
+    text-align: center;
+    line-height: 29px;
+    padding: 0px 5px;
+    margin-right: 8px;
+    margin-bottom: 29px;
+  }
+
+  &__date {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #515151;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 20px;
+    color: #515151;
+    font-weight: bold;
+    margin-bottom: 19px;
+  }
+
+  p {
+    font-family: $font-arial;
+    color: #515151;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 19px;
+  }
 }

@@ -1,0 +1,29 @@
+
+.post-promo {
+  $block-name: &; // #{$block-name}__element {}
+  display: flex;
+  align-items: flex-start;
+
+  &__content {
+    flex: 0 0 51.3%;
+    padding-right: 23px;
+
+    p {
+      font-size: 16px;
+      line-height: 18px;
+      color: #515151;
+      margin-bottom: 19px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      min-width: 196px;
+    }
+  }
+
+  &__img {
+    .img {
+      width: 100%;
+    }
+  }
+}

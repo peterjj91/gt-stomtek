@@ -1,0 +1,106 @@
+
+.view-block {
+  $block-name: &; // #{$block-name}__element {}
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    margin-bottom: 56px;
+  }
+
+  &__btn {
+    text-align: center;
+
+    .btn {
+      min-width: 196px;
+    }
+  }
+
+  &--services {
+    padding: 68px 0px 62px 0px;
+    padding-top: 68px;
+    padding-bottom: 62px;
+
+    #{$block-name} {
+      &__title {
+
+      }
+    }
+  }
+
+  &--list {
+    padding-top: 76px;
+    padding-bottom: 25px;
+  }
+
+  &--doctors {
+    padding-top: 46px;
+    position: relative;
+    z-index: -1;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-image: url(./../img/main-background-img1.png);
+      background-position: center;
+      height: 1037px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    #{$block-name} {
+      &__content {
+        margin-bottom: 75px;
+      }
+    }
+  }
+
+  &--review {
+    padding-top: 77px;
+    padding-bottom: 61px;
+
+    #{$block-name} {
+      &__title {
+        margin-bottom: 48px;
+      }
+      &__content {
+        margin-bottom: 45px;
+      }
+    }
+  }
+
+  &--license {
+    background-color: #dde1e4;
+    padding-top: 39px;
+    padding-bottom: 24px;
+
+    #{$block-name} {
+      &__title {
+        margin-bottom: 31px;
+      }
+    }
+  }
+
+  &--article {
+    padding-top: 61px;
+    
+    #{$block-name} {
+      &__title {
+        
+      }
+    }
+  }
+
+  // &--services {
+  //   #{$block-name} {
+      
+  //   }
+  // }
+}

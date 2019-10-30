@@ -24,15 +24,12 @@
     "images": [],
     "nav-quick": [],
     "menu-mobile": [],
-    "view-services": [],
-    "view-slider-full": [],
     "article-quick": [],
     "card-promo": [],
-    "view-price-list": [],
-    "view-doctors": [],
     "view-review": [],
-    "view-license": [],
-    "view-article": []
+    "view-block": [],
+    "scrollbar": [],
+    "post-promo": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -48,7 +45,9 @@
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/bootstrap/dist/js/bootstrap.js",
     "./node_modules/slick-carousel/slick/slick.js",
-    "./node_modules/bootstrap-select/dist/js/bootstrap-select.js"
+    "./node_modules/bootstrap-select/dist/js/bootstrap-select.js",
+    "./src/js/perfect-scrollbar.js",
+    "./src/js/flipster-slider.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"

@@ -14,10 +14,144 @@
 
       <div class="page__content">
         <main class="page__main-content" role="main">
+
           @@include('blocks/view-main/view-main.html')
-          @@include('blocks/view-services/view-services.html')
-          @@include('blocks/view-slider-full/view-slider-full.html')
-          @@include('blocks/view-price-list/view-price-list.html')
+          
+          <div class="view-block view-block--services">
+            <div class="container">
+              <div class="h2 view-block__title">Услуги</div>
+            </div>
+            
+            <div class="view-block__content">
+              @@include('blocks/slider/slider--services.html')
+            </div>
+
+            <div class="view-block__btn">
+              <a href="#" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="view-block">
+            @@include('blocks/slider/slider--full.html')
+          </div>
+
+          <div class="view-block view-block--list">
+            <div class="container">
+              <div class="h2 view-block__title">ПРАЙС-ЛИСТ</div>
+
+              @@include('blocks/card-promo/card-promo--main.html')
+
+              <div class="view-block__btn">
+                <a href="#" class="btn btn-primary">смотреть всё</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="view-block view-block--doctors">
+            <div class="container">
+              <div class="h2 view-block__title">нАШИ СПЕЦИАЛИСТЫ</div>
+
+              <div class="view-block__content">
+                <div class="scroll-doctors">
+                  <div class="scroll-doctors__content">
+                    <div class="profile-card__wrapper">
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img1.png",
+                        "title": "Сайфудинова Тамара Михайловна",
+                        "position": "главный врач"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img2.png",
+                        "title": "Могилевский Александр Игоревич",
+                        "position": "врач стоматолог-хирург"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img3.png",
+                        "title": "Киржа Ольга Владимировна",
+                        "position": "врач стоматолог-терапевт"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img4.png",
+                        "title": "Данилова Евгения Сергеевна",
+                        "position": "врач стоматолог-хирург"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img5.png",
+                        "title": "Харламова Ольга Сергеевна",
+                        "position": "врач-стоматолог-ортодонт"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img1.png",
+                        "title": "Сайфудинова Тамара Михайловна",
+                        "position": "главный врач"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img2.png",
+                        "title": "Могилевский Александр Игоревич",
+                        "position": "врач стоматолог-хирург"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img3.png",
+                        "title": "Киржа Ольга Владимировна",
+                        "position": "врач стоматолог-терапевт"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img4.png",
+                        "title": "Данилова Евгения Сергеевна",
+                        "position": "врач стоматолог-хирург"
+                      })
+                      @@include('blocks/profile-card/profile-card.html', {
+                        "img": "img/doctor-profile-img5.png",
+                        "title": "Харламова Ольга Сергеевна",
+                        "position": "врач-стоматолог-ортодонт"
+                      })
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="view-block__btn">
+                <a href="#" class="btn btn-primary">подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="view-block view-block--review">
+            <div class="container">
+              <div class="h2 view-block__title">отзывы</div>
+            </div>
+              
+            <div class="view-block__content">
+              @@include('blocks/slider/slider--review.html')
+            </div>
+
+            <div class="view-block__btn">
+              <a href="#" class="btn btn-primary">Читать далее</a>
+            </div>
+          </div>
+
+          <div class="view-block view-block--license">
+            <div class="container">
+              <div class="h2 view-block__title">Лицензии</div>
+
+              @@include('blocks/slider/slider--license.html')
+
+              <div class="view-block__btn">
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="view-block view-block--article">
+            <div class="container">
+              <div class="h2 view-block__title">заголовок блока для seo</div>
+              
+              <div class="view-block__content">
+                @@include('blocks/post-promo/post-promo.html')
+              </div>
+            </div>
+          </div>
+
         </main>
       </div>
 
