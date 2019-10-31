@@ -1,12 +1,18 @@
 
 .post-promo {
   $block-name: &; // #{$block-name}__element {}
-  display: flex;
-  align-items: flex-start;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: flex-start;
+  }
 
   &__content {
-    flex: 0 0 51.3%;
-    padding-right: 23px;
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 51.3%;
+      padding-right: 23px;
+      padding-top: 10px;
+    }
 
     p {
       font-size: 16px;
@@ -14,14 +20,29 @@
       color: #515151;
       margin-bottom: 19px;
     }
+  }
 
-    .btn {
-      margin-top: 15px;
+  &__footer {
+    margin-top: 25px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 34px;
+      text-align: left;
+    }
+
+    .btn { 
       min-width: 196px;
     }
   }
 
   &__img {
+    display: none;
+    
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+    }
+
     .img {
       width: 100%;
     }

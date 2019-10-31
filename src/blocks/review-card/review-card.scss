@@ -2,13 +2,16 @@
   $block-name: &; // #{$block-name}__element {}
   background-color: #edf2f5;
   border: 7px solid white;
-  padding: 15px 20px 15px 23px;
+  padding: 13px 8px 7px 8px;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
   font-family: $font-pt-serif;
-  min-height: 380px;
-  padding-bottom: 20px;
   position: relative;
   margin-bottom: 10px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 15px 20px 15px 23px;
+    min-height: 380px;
+  }
 
   &__rate {
     color: #ff9110;
@@ -34,12 +37,17 @@
 
   &__date {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 19px;
+    right: 7px;
     font-size: 14px;
     line-height: 20px;
     color: #515151;
     font-weight: bold;
+
+    @include media-breakpoint-up(lg) {
+      top: 22px;
+      right: 22px;
+    }
   }
 
   &__title {

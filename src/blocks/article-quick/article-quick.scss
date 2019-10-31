@@ -1,7 +1,10 @@
 .article-quick {
   $block-name: &; // #{$block-name}__element {}
-  height: 528px;
   position: relative;
+
+  @include media-breakpoint-up(xl) {
+    height: 528px;
+  }
 
   &__img {
     position: absolute;
@@ -11,24 +14,40 @@
     height: 100%;
     z-index: -1;
     background-size: cover;
-    background-position: top center;
+    background-position: right;
+
+    @include media-breakpoint-up(xl) {
+      background-position: top center;
+    }
 
     &__wrapper {
-      height: 528px;
+      height: 179px;
       position: relative;
+
+      @include media-breakpoint-up(xl) {
+        height: 528px;
+      }
     }
   }
 
   &__content {
-    padding-top: 184px;
+    text-align: center;
+    
+    @include media-breakpoint-up(xl) {
+      padding-top: 184px;
+      text-align: left;
+    }
   }
 
   &__description {
-    border-left: 3px solid #ff9200;
-    margin-left: -3px;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-bottom: 7px;
+    padding-top: 14px;
+
+    @include media-breakpoint-up(xl) {
+      border-left: 3px solid #ff9200;
+      padding-top: 16px;
+      padding-left: 16px;
+      padding-bottom: 7px;
+    }
   }
 
   &__title {
@@ -37,8 +56,14 @@
   }
 
   &__footer {
-    margin-top: 21px;
-    margin-left: 19px;
+    margin-top: 42px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 19px;
+      margin-top: 21px;
+      text-align: initial;
+    }
 
     .btn {
       min-width: 195px;

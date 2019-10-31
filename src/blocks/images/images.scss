@@ -39,3 +39,24 @@
 .icon-close {
   @include sprite($close);
 }
+
+.icon-instagram {
+  display: inline-block;
+  background-image: url('./../img/icon-instagram.png');
+  width: 20px;
+  height: 20px;
+}
+
+.icon-vk {
+  display: inline-block;
+  background-image: url('./../img/icon-vk.png');
+  width: 20px;
+  height: 20px;
+}
+
+// .icon-instagram {
+//   display: inline-block;
+//   background-image: url('./../img/icon-instagram.png');
+//   width: 20px;
+//   height: 20px;
+// }

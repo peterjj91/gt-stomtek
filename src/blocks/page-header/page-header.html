@@ -53,12 +53,37 @@
 
     <div class="page-header__nav__wrapper">
       <div class="container">
-        <div class="page-header__nav">
+        <div class="page-header__nav page-header__nav--header">
           @@include('./../menu-mobile/menu-mobile.html')
-          @@include('./../navbar/navbar--header.html')
-          <a href="#" class="btn btn-primary">Запись на прием</a>
+
+          <div class="dropdown dropdown--service">
+            <button 
+              class="btn dropdown-toggle" 
+              type="button" 
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false"
+              id="dropdown-service"
+            >
+              Меню
+            </button>
+            <div class="dropdown-menu">
+              @@include('./../navbar/navbar--header.html')
+              <a href="#" class="btn btn-primary page-header__nav__order">Запись на прием</a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="page-header__phone">
+      <a href="tel:+74712238223">
+        <svg class="icon icon-phone icon-phone--mini">
+          <use xlink:href="img/sprite-svg.svg#phone"></use>
+        </svg>
+        
+        7 (4712) 23-82-23
+      </a>
     </div>
   </nav>
 

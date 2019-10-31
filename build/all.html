@@ -128,12 +128,13 @@
 
             <div class="page-header__nav__wrapper">
               <div class="container">
-                <div class="page-header__nav">
+                <div class="page-header__nav page-header__nav--header">
                   <div class="dropdown menu-mobile">
                     <button
                       class="btn btn-light navbar-toggler"
                       type="button"
                       data-toggle="collapse"
+                      id="menu-mobile"
                       data-target="#navbarSupportedContent"
                       aria-controls="navbarSupportedContent"
                       aria-expanded="false"
@@ -143,44 +144,67 @@
                       Услуги
                     </button>
                   </div>
-                  <ul class="navbar navbar--menu">
-                    <li>
-                      <button
-                        type="button"
-                        class="btn btn-light dropdown-toggle"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        О клинике
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Вакансии</a>
-                        <a class="dropdown-item" href="#">Лицензии</a>
-                        <a class="dropdown-item" href="#">Оборудование</a>
-                        <a class="dropdown-item" href="#">Галерея</a>
-                        <a class="dropdown-item" href="#">Расписание</a>
-                        <a class="dropdown-item" href="#">Отзывы</a>
-                        <a class="dropdown-item" href="#">Статьи</a>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-light">Цены</a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-light">Доктора</a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-light">Акции</a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-light">Контакты</a>
-                    </li>
-                  </ul>
 
-                  <a href="#" class="btn btn-primary">Запись на прием</a>
+
+                  <div class="dropdown dropdown--service">
+                    <button 
+                      class="btn dropdown-toggle" 
+                      type="button" 
+                      data-toggle="dropdown" 
+                      aria-haspopup="true" 
+                      aria-expanded="false"
+                      id="dropdown-service"
+                    >
+                      Меню
+                    </button>
+                    <div class="dropdown-menu">
+                      <ul class="navbar navbar--menu">
+                        <li class="dropdown-submenu">
+                          <a
+                            href="#"
+                            class="btn btn-light dropdown-submenu__link"
+                          >
+                            О клинике
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" tabindex="-1">Вакансии</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Лицензии</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Оборудование</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Галерея</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Расписание</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Отзывы</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Статьи</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Цены</a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Доктора</a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Акции</a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Контакты</a>
+                        </li>
+                      </ul>
+
+                      <a href="#" class="btn btn-primary page-header__nav__order">Запись на прием</a>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+
+            <div class="page-header__phone">
+              <a href="tel:+74712238223">
+                <svg class="icon icon-phone icon-phone--mini">
+                  <use xlink:href="img/sprite-svg.svg#phone"></use>
+                </svg>
+        
+                7 (4712) 23-82-23
+              </a>
             </div>
           </nav>
           <div
@@ -301,11 +325,90 @@
       </div>
 
       <div class="page__footer-wrapper">
-
         <footer class="page-footer" role="contentinfo">
           <div class="page-footer__inner">
-            <div class="container">
-              footer
+            <div class="map">
+              <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/-/CGHvU6lc" width="100%" height="502" frameborder="1" allowfullscreen="true"></iframe>
+            </div>
+
+    
+            <div class="page-footer__main">
+              <div class="container">
+                <div class="page-header__nav page-header__nav--footer">
+                  <a href="#" class="page-header__logo page-header__logo--footer">
+                    <div class="logo logo--main"></div>
+                  </a>
+                  <ul class="navbar navbar--menu navbar--footer">
+                    <li>
+                      <a href="#" class="btn btn-light">Услуги</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">О клинике</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Цены</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Доктора</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Акции</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Контакты</a>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="btn btn-primary">Запись на прием</a>
+                </div>
+
+                <ul class="page-footer__info">
+                  <li>
+                    <a href="#">
+                      <svg class="icon icon-location icon-location--mini">
+                        <use xlink:href="img/sprite-svg.svg#location"></use>
+                      </svg>
+
+                      г. Курск, ул. Карла Маркса, 49
+                    </a>
+                  </li>
+                  <li class="page-footer__info__phone">
+                    <a href="#">
+                      <svg class="icon icon-phone">
+                        <use xlink:href="img/sprite-svg.svg#phone"></use>
+                      </svg>
+
+                      7 (4712) 23-82-23
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icon-vk.png" class="icon icon-vk" alt="">
+
+                      Мы Вконтакте
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icon-instagram.png" class="icon icon-instagram" alt="">
+
+                      Мы в Инстаграм
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="page-footer__copyright">
+                      Разработка сайта: 
+                      <img src="img/made-by.png" class="page-footer__info__made" width="163px" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="page-footer__footer">
+              <div class="container">
+                <p>© Стоматологическая клиника «СТОМТЕК», 2019 I ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+              </div>
             </div>
           </div>
         </footer>

@@ -5,21 +5,48 @@
     display: flex;
     align-items: center;
     border: none;
-    padding: 11px 14px 11px 0;
-    font-size: 16px;
+    padding: 11px 14px 11px 12px;
+    font-size: 19px;
     font-weight: bold;
-    color: #4a545b;
     box-shadow: none !important;
+    
+    @include media-breakpoint-down(md) {
+      background-color: #ff9110 !important;
+      color: white !important;
+    }
+    @include media-breakpoint-up(lg) {
+      background-color: transparent;
+      color: #4a545b;
+      font-size: 16px;
+      padding-left: 0;
+      height: 45px;
+    }
 
     &:after {
       display: none;
+    }
+
+    &[aria-expanded="true"] {
+      .icon {
+        @include sprite($close-white);
+
+        @include media-breakpoint-up(lg) {
+          @include sprite($close);
+          margin-right: 14px;
+        }
+      }
     }
   }
 
   .icon {
     display: inline-block;
-    @include sprite($burger);
-    margin-right: 10px;
+    @include sprite($burger-white);
+    margin-right: 29px;
+
+    @include media-breakpoint-up(lg) {
+      @include sprite($burger);
+      margin-right: 10px;
+    }
   }
 
   &.show {

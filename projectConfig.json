@@ -29,7 +29,9 @@
     "view-review": [],
     "view-block": [],
     "scrollbar": [],
-    "post-promo": []
+    "post-promo": [],
+    "address-promo": [],
+    "map": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

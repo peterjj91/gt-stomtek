@@ -4,7 +4,13 @@
 
   &--main {
     background-image: url(./../img/logo.png);
-    width: 263px;
-    height: 80px;
+    width: 245px;
+    height: 76px;
+    background-size: contain;
+
+    @include media-breakpoint-up(md) {
+      width: 263px;
+      height: 80px;
+    }
   }
 }

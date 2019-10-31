@@ -4,27 +4,23 @@
 
 .page-header {
   $block-name: &; // #{$block-name}
-  min-width: 1300px;
   position: relative;
-  padding-bottom: 1px;
-  border-bottom: 1px solid #edf2f5;
-
-  @include media-breakpoint-up(xs) {
-  }
+  padding-top: 18px;
+  
   @include media-breakpoint-up(sm) {
+    padding-top: 0;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #edf2f5;
   }
   @include media-breakpoint-up(md) {
   }
   @include media-breakpoint-up(lg) {
+    
   }
   @include media-breakpoint-up(xl) {
   }
 
   &__inner {
-    @include media-breakpoint-up(xs) {
-    }
-    @include media-breakpoint-up(sm) {
-    }
     @include media-breakpoint-up(md) {
     }
     @include media-breakpoint-up(lg) {
@@ -33,10 +29,8 @@
     }
   }
 
-  &__toggle {
-  }
-
   &__info {
+    display: none;
     width: 100%;
     background-color: #edf2f5;
     padding-top: 6px;
@@ -45,10 +39,13 @@
     @include media-breakpoint-up(xs) {
     }
     @include media-breakpoint-up(sm) {
+      
     }
     @include media-breakpoint-up(md) {
+      
     }
     @include media-breakpoint-up(lg) {
+      display: block;
     }
 
     &__list {
@@ -88,15 +85,23 @@
   }
 
   &__main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     width: 100%;
-    margin-bottom: -3px;
+
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: -3px;
+    }
 
     &__wrapper {
       width: 100%;
-      border-bottom: 2px solid #edf2f5;
+      margin-bottom: 12px;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 0;
+        border-bottom: 2px solid #edf2f5;
+      }
     }
   }
 
@@ -128,8 +133,12 @@
       display: flex;
       align-items: center;
       font-family: $font-pt-serif;
-      font-size: 22px;
+      font-size: 17px;
       color: #515151;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 22px;
+      }
 
       &:hover,
       &:focus {
@@ -149,23 +158,136 @@
   }
 
   &__logo {
-    margin-top: 5px;
+    display: inline-block;
+    margin-left: 22px;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+
+    &--footer {
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+      }
+    }
   }
 
   &__nav-quick {
+    display: none;
     margin-top: 15px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+    }
   }
 
   &__nav {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
 
     &__wrapper {
       width: 100%;
+
+      .container {
+        @include media-breakpoint-up(sm) {}
+      }
+    }
+
+    &__order {
+      display: none;
+      white-space: nowrap;
+      
+      @include media-breakpoint-up(sm) {
+        display: inline-block;
+      }
+    }
+
+    &--header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0px -14px;
+
+      @include media-breakpoint-up(sm) {
+        margin: 0;
+      }
+
+      & > .dropdown {
+        @include media-breakpoint-down(sm) {
+          width: 50%;
+          margin: 0px 2.5px;
+        }
+
+        & > .btn {
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            height: 46px;
+          }
+        }
+      }
+    }
+
+    &--footer {
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+        display: block;
+      }
+      @include media-breakpoint-up(sm) {
+        margin-top: 9px;
+        align-items: center !important;
+      }
+
+      & > .btn {
+        margin-top: 19px;
+
+        @include media-breakpoint-up(xl) {
+          margin-top: -8px;
+        }
+      }
+    }
+  }
+
+  &__phone {
+    margin-top: 4px;
+    width: 100%;
+    font-family: $font-pt-serif;
+    z-index: 3;
+    background-color: #edf2f5;
+
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding: 5px 0px 5px 0px;
+      font-size: 26px;
+      line-height: 38.77px;
+      color: #515151;
+      font-weight: bold;
+
+      &:hover, &:focus {
+        color: #515151;
+        text-decoration: none;
+      }
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
     }
   }
 }

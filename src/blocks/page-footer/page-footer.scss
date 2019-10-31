@@ -27,4 +27,110 @@
 
   &__content {
   }
+
+  &__main {
+    padding-top: 16px;
+    padding-bottom: 4px;
+    
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__info {
+    padding: 0;
+    padding-top: 17px;
+    list-style: none;
+    margin: 0;
+    color: #7a828c;
+    font-size: 16px;
+    line-height: 33px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 7px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px -15px;
+      padding: 4px 15px 0px 15px;
+
+      @include media-breakpoint-up(xl) {
+        justify-content: end;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      color: #7a828c;
+      text-align: center;
+
+      &:hover, &:focus {
+        color: #7a828c;
+        text-decoration: none;
+      }
+    }
+
+    .icon {
+      margin-top: -5px;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    &__made {
+      @include media-breakpoint-up(xl) {
+        margin-top: -23px;
+        margin-left: 10px;
+      }
+    }
+
+    &__phone {
+      @include media-breakpoint-down(lg) {
+        background-color: #ebeced;
+      }
+    }
+  }
+
+  &__copyright {
+    @include media-breakpoint-down(xl) {
+      display: flex !important;
+      text-align: center;
+      align-items: center;
+    }
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__footer {
+    background-color: #edf2f5;
+    padding: 13px 0px 6px 0px;
+    text-align: center;
+
+    p {
+      font-size: 15px;
+      line-height: 21px;
+      color: #9ea4ab;
+    }
+  }
+
+  .logo {
+    @include media-breakpoint-down(lg) {
+      height: 66px;
+      width: 212px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }

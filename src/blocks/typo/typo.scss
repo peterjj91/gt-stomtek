@@ -4,37 +4,42 @@
 .h1,
 h1 {
   font-family: $font-pt-serif;
-  font-size: 37px;
-  line-height: 41px;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
+    font-size: 37px;
+    line-height: 41px;
+    letter-spacing: normal;
   }
 }
 
 .h2,
 h2 {
   font-family: $font-pt-serif;
-  font-size: 30px;
+  font-size: 24px;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
+    font-size: 30px;
   }
 }
 
 .h3,
 h3 {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
   }
 }
 
 .h4,
 h4 {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
   }
 }
 
 p,
 .text {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
   }
 }
 

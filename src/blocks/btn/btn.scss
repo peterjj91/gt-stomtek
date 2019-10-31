@@ -11,7 +11,8 @@
   &-primary {
     font-size: 14px;
     color: #ffffff;
-    background-color: #ff9110;
+    background: rgb(255,145,16);
+    background: linear-gradient(90deg, rgba(255,145,16,1) 0%, rgba(255,167,64,1) 100%);
     border: none;
     padding: 12px 26px 12px 26px;
     border-radius: 21px;
@@ -25,7 +26,8 @@
 
     &:hover,
     &:focus {
-      background-color: #ff9110;
+      background: rgb(255,145,16);
+      background: linear-gradient(90deg, rgba(255,145,16,1) 0%, rgba(255,167,64,1) 100%);
       box-shadow: inset 0px -2px 0px 0px #ef7317;
     }
 
@@ -33,7 +35,8 @@
     }
 
     &:not(:disabled):not(.disabled):active {
-      background-color: #ff9110;
+      background: rgb(255,145,16);
+      background: linear-gradient(90deg, rgba(255,145,16,1) 0%, rgba(255,167,64,1) 100%);
 
       &:focus {
         box-shadow: inset 0px -2px 0px 0px #ef7317;

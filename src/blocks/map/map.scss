@@ -1,0 +1,15 @@
+
+.map {
+  $block-name: &; // #{$block-name}__element {}
+  width: 100%;
+  height: 240px;
+
+  @include media-breakpoint-up(lg) {
+    height: 502px;
+  }
+
+  &__frame {
+    height: 100%;
+    border: none;
+  }
+}

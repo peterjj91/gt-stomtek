@@ -152,6 +152,35 @@
             </div>
           </div>
 
+          <div class="view-block view-block--contacts">
+            <div class="container">
+              <div class="view-block__title h2">контакты</div>
+
+              <div class="view-block__content">
+                <div class="row">
+                  <div class="col-12 col-lg-4">
+                    @@include('blocks/address-promo/address-promo.html', {
+                      "title": "Телефон:",
+                      "info": "<svg class='icon icon-phone icon-phone--mini'><use xlink:href='img/sprite-svg.svg#phone'></use></svg> 7 (4712) 23-82-23"
+                    })
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    @@include('blocks/address-promo/address-promo.html', {
+                      "title": "Адрес:",
+                      "info": "<svg class='icon icon-location icon-location--mini'><use xlink:href='img/sprite-svg.svg#location'></use></svg> г. Курск, ул. Карла Маркса, 49"
+                    })
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    @@include('blocks/address-promo/address-promo.html', {
+                      "title": "Режим работы:",
+                      "info": "<svg class='icon icon-clock icon-clock--mini'><use xlink:href='img/sprite-svg.svg#clock'></use></svg> пн-пт: с 9:00 до 18:00"
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </main>
       </div>
 

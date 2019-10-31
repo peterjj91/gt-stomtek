@@ -8,12 +8,20 @@
   line-height: normal;
 
   li {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
-    width: 169px;
     text-align: center;
     border-right: 2px solid #edf2f5;
+    max-width: 150px;
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      max-width: none;
+      width: 169px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     &:first-child {
       padding-left: 0;
@@ -33,7 +41,6 @@
   }
 
   .icon {
-    // width: 40px;
     height: 38px;
     fill: #fec07a;
   }
@@ -54,9 +61,14 @@
   }
 
   &__text {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 13px;
     text-transform: uppercase;
     font-weight: bold;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }

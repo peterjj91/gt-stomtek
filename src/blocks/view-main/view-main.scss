@@ -1,22 +1,29 @@
 .view-main {
   $block-name: &; // #{$block-name}__element {}
-  display: flex;
-  // align-items: center;
-  align-items: flex-start;
-  padding-top: 78px;
+  padding-top: 30px;
   width: 100%;
-  height: 670px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   box-shadow: inset 0px 0px 25px 0px rgba(201, 216, 225, 0.5);
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 78px;
+    height: 670px;
+  }
 
   &__description {
     max-width: 700px;
   }
 
   .h1 {
-    margin-bottom: 64px;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 64px;
+    }
   }
 
   &__list {
@@ -25,20 +32,31 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 31px;
     list-style: none;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 31px;
+    }
 
     li {
       display: flex;
       align-items: flex-start;
-      width: 337px;
-      padding-right: 20px;
-      margin-bottom: 24px;
+      margin-bottom: 7px;
+  
+      @include media-breakpoint-up(md) {
+        width: 337px;
+        padding-right: 20px;
+        margin-bottom: 24px;
+      }
     }
 
     &__icon {
-      flex: 0 0 88px;
+      flex: 0 0 85px;
       position: relative;
+
+      @include media-breakpoint-up(md) {
+        flex: 0 0 88px;
+      }
 
       &:after {
         content: '';
@@ -80,7 +98,12 @@
   }
 
   .btn {
+    display: none;
+    margin-top: 20px;
+    
     @include media-breakpoint-up(md) {
+      margin-top: 0;
+      display: inline-block;
       min-width: 327px;
       font-size: 16px;
       letter-spacing: -0.1px;
