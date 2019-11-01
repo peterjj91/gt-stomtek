@@ -5,6 +5,7 @@
 h1 {
   font-family: $font-pt-serif;
   font-size: 24px;
+  font-weight: bold;
   line-height: 26px;
   letter-spacing: 0.8px;
 
@@ -19,6 +20,7 @@ h1 {
 h2 {
   font-family: $font-pt-serif;
   font-size: 24px;
+  font-weight: bold;
 
   @include media-breakpoint-up(lg) {
     font-size: 30px;
