@@ -1,71 +1,12 @@
-$(document).ready(function() {});
 
 $(document).ready(function() {
   $('.select-promo').selectpicker();
 });
 
-$(document).ready(function() {
-  $('.slider-services').slick({
-    dots: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1220,
-        settings: {
-          slidesToShow: 3,
-          adaptiveHeight: true
-        }
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 1,
-          adaptiveHeight: true
-        }
-      },
-    ]
-  });
-});
-
-$(document).ready(function() {
-  $('.slider-review').slick({
-    dots: false,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 1,
-          adaptiveHeight: true
-        }
-      },
-    ]
-  });
-});
-
-// $(document).ready(function(){
-//   $('.dropdown-submenu a.dropdown-submenu__link').on("click", function(e) {
-//     $(this).next('.dropdown-menu').toggle();
-//     e.stopPropagation();
-//     e.preventDefault();
-//   });
-// });
-
-
-// $(document).ready(function(){
-  // $('.dropdown--service .dropdown-menu').on("click", function(e) {
-    // e.stopPropagation();
-    // e.preventDefault();
-  // });
-// });
-
 $(document).ready(function(){
   $("#dropdown-service").on("click", function(e) {
     $("#navbarSupportedContent").removeClass("collapse show");
     $("#navbarSupportedContent").addClass("collapse");
-    // $("#menu-mobile").setAttribute("aria-expanded", "false");
     document.querySelector("#menu-mobile").setAttribute("aria-expanded", "false");
   })
 });
@@ -155,5 +96,44 @@ if ($('.flipster').length) {
     spacing: 0,
     buttons: true
   });
-
 }
+
+$(document).ready(function() {
+  $('.slider-services').slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1220,
+        settings: {
+          slidesToShow: 3,
+          adaptiveHeight: true
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });
+});
+
+$(document).ready(function() {
+  $('.slider-review').slick({
+    dots: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: true
+        }
+      },
+    ]
+  });
+});
