@@ -10,13 +10,14 @@
     font-weight: bold;
     box-shadow: none !important;
     
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(xl) {
       background-color: #ff9110 !important;
       color: white !important;
+      height: 45px;
     }
-    @include media-breakpoint-up(lg) {
-      background-color: transparent;
-      color: #4a545b;
+    @include media-breakpoint-up(xl) {
+      background-color: transparent !important;
+      color: #4a545b !important;
       font-size: 16px;
       padding-left: 0;
       height: 45px;
@@ -29,10 +30,10 @@
     &[aria-expanded="true"] {
       .icon {
         @include sprite($close-white);
+        margin-right: 14px;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           @include sprite($close);
-          margin-right: 14px;
         }
       }
     }
@@ -41,9 +42,9 @@
   .icon {
     display: inline-block;
     @include sprite($burger-white);
-    margin-right: 29px;
+    margin-right: 10px;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       @include sprite($burger);
       margin-right: 10px;
     }

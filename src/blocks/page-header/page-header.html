@@ -57,19 +57,20 @@
           @@include('./../menu-mobile/menu-mobile.html')
 
           <div class="dropdown dropdown--service">
-            <button 
+            <a 
               class="btn dropdown-toggle" 
-              type="button" 
-              data-toggle="dropdown" 
-              aria-haspopup="true" 
-              aria-expanded="false"
               id="dropdown-service"
+              data-toggle="collapse" 
+              href="#collapseExample" 
+              role="button" 
+              aria-expanded="false" 
+              aria-controls="collapseExample"
             >
               Меню
-            </button>
-            <div class="dropdown-menu">
+            </a>
+            <div class="collapse droppping-menu" id="collapseExample">
               @@include('./../navbar/navbar--header.html')
-              <a href="#" class="btn btn-primary page-header__nav__order">Запись на прием</a>
+              <a href="#" class="btn btn-primary page-header__nav__order d-none d-xl-flex align-items-center">Запись на прием</a>
             </div>
           </div>
         </div>

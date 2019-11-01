@@ -147,26 +147,27 @@
 
 
                   <div class="dropdown dropdown--service">
-                    <button 
+                    <a 
                       class="btn dropdown-toggle" 
-                      type="button" 
-                      data-toggle="dropdown" 
-                      aria-haspopup="true" 
-                      aria-expanded="false"
                       id="dropdown-service"
+                      data-toggle="collapse" 
+                      href="#collapseExample" 
+                      role="button" 
+                      aria-expanded="false" 
+                      aria-controls="collapseExample"
                     >
                       Меню
-                    </button>
-                    <div class="dropdown-menu">
+                    </a>
+                    <div class="collapse droppping-menu" id="collapseExample">
                       <ul class="navbar navbar--menu">
                         <li class="dropdown-submenu">
                           <a
-                            href="#"
+                            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                             class="btn btn-light dropdown-submenu__link"
                           >
                             О клинике
                           </a>
-                          <div class="dropdown-menu">
+                          <div class="dropdown-menu dropdown-menu--droppping" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="#" tabindex="-1">Вакансии</a>
                             <a class="dropdown-item" href="#" tabindex="-1">Лицензии</a>
                             <a class="dropdown-item" href="#" tabindex="-1">Оборудование</a>
@@ -188,9 +189,43 @@
                         <li>
                           <a href="#" class="btn btn-light">Контакты</a>
                         </li>
+                        <li class="d-xl-none">
+                          <a href="#" class="btn btn-primary page-header__nav__order">Запись на прием</a>
+
+                          <div class="page-header__info page-header__info--mobile">
+                            <ul class="page-header__info__list">
+                              <li>
+                                <svg class="icon icon-location icon-location--mini">
+                                  <use xlink:href="img/sprite-svg.svg#location"></use>
+                                </svg>
+
+                                <span>г. Курск, ул. Карла Маркса, 49</span>
+                              </li>
+                              <li>
+                                <svg class="icon icon-clock icon-clock--mini">
+                                  <use xlink:href="img/sprite-svg.svg#clock"></use>
+                                </svg>
+
+                                <span>пн-пт: с 9:00 до 18:00</span>
+                              </li>
+                              <li>
+                                <div class="page-header__call page-header__call--mobile">
+                                  <a href="#" class="page-header__call__text">
+                                    Заказать звонок
+                                  </a>
+                                  <select class="select-promo show-menu-arrow" data-width="fit">
+                                    <option data-content="<span class='icon icon-lang-ru'></span> Ru"></option>
+                                    <option data-content="<span class='icon icon-lang-en'></span> En"></option>
+                                  </select>
+
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
                       </ul>
 
-                      <a href="#" class="btn btn-primary page-header__nav__order">Запись на прием</a>
+                      <a href="#" class="btn btn-primary page-header__nav__order d-none d-xl-flex align-items-center">Запись на прием</a>
                     </div>
                   </div>
                 </div>

@@ -9,33 +9,43 @@
       // padding: 0;
       flex-direction: column !important;
     }
+
+    li {
+      // text-align: left;
+
+      @include media-breakpoint-up(lg) {
+        // text-align: center;
+      }
+    }
   }
 
   &--menu {
     list-style: none;
     padding: 0;
+    padding-bottom: 30px;
     margin: 0;
 
     @include media-breakpoint-up(sm) {
-      margin-top: 0px;
+      
     }
-    @include media-breakpoint-up(lg) {
-      margin-right: 85px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 0px;
+      margin-right: 46px;
+      padding-bottom: 0;
     }
 
     li {
       margin: 0px;
       width: 100%;
+      box-shadow: inset 0px -1px 0px 0px #edf2f5, inset -1px 0px 0px 0px #edf2f5;
       
-      @include media-breakpoint-up(sm) {
-        
-      }
       @include media-breakpoint-up(lg) {
-        width: auto;
-        margin: 0px 15px;
+        // margin: 0px 15px;
       }
       @include media-breakpoint-up(xl) {
-        margin: 0px 36px;
+        width: auto;
+        box-shadow: none;
+        margin: 0px 39px;
       }
 
       &:first-child {
@@ -50,20 +60,39 @@
         letter-spacing: -0.4px;
         color: #7a828c;
         font-size: 14px;
+        text-align: left;
+        height: 54px;
+        display: flex !important;
+        align-items: center;
+        padding-left: 19px;
 
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(lg) {
+          display: block !important;
+          padding-left: 0;
+          height: auto;
           font-size: 16px;
           font-weight: bold;
           color: #4a545b;
+          text-align: center;
         }
       }
 
       .btn {
         display: block;
+
+        &.page-header__nav__order {
+          @include media-breakpoint-down(lg) {
+            margin: 0 auto;
+            margin-top: 19px;
+            height: 45px;
+            margin-bottom: 9px;
+            padding-left: 26px;
+          }
+        }
       }
     }
 
-    .dropdown-menu {
+    .dropdown-menu--droppping {
       border: none;
       padding: 0px 0px;
 
@@ -78,13 +107,18 @@
       }
 
       .dropdown-item {
-        padding: 0.375rem 0.75rem;
+        display: flex;
+        align-items: center;
+        padding: 0.375rem 0.75rem 0.375rem 20px;
         font-size: 14px;
         color: #7a828c;
+        height: 54px;
         border-bottom: 1px solid #d4d4d4;
         text-align: center;
 
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(lg) {
+          display: block;
+          height: auto;
           padding: 4px 22px;
           text-align: left;
           border-bottom: 1px solid #edf2f5;
@@ -122,7 +156,7 @@
         margin-bottom: -1px;
       }
       @include media-breakpoint-up(xl) {
-        margin: 0px 16px !important;
+        margin: 0px 24px !important;
       }
 
       a {
@@ -147,8 +181,12 @@
       width: 100%;
       background: white;
 
+      @include media-breakpoint-up(sm) {
+        margin-top: 0;
+      }
+
       @include media-breakpoint-up(lg) {
-        margin-top: 1px;
+        margin-top: 0px;
         padding: 0;
       }
     }

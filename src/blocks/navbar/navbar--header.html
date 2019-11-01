@@ -5,12 +5,12 @@ More: https://www.npmjs.com/package/gulp-file-include
 <ul class="navbar navbar--menu">
   <li class="dropdown-submenu">
     <a
-      href="#"
+      href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
       class="btn btn-light dropdown-submenu__link"
     >
       О клинике
     </a>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu--droppping" aria-labelledby="dropdownMenuLink">
       <a class="dropdown-item" href="#" tabindex="-1">Вакансии</a>
       <a class="dropdown-item" href="#" tabindex="-1">Лицензии</a>
       <a class="dropdown-item" href="#" tabindex="-1">Оборудование</a>
@@ -31,5 +31,36 @@ More: https://www.npmjs.com/package/gulp-file-include
   </li>
   <li>
     <a href="#" class="btn btn-light">Контакты</a>
+  </li>
+  <li class="d-xl-none">
+    <a href="#" class="btn btn-primary page-header__nav__order">Запись на прием</a>
+
+    <div class="page-header__info page-header__info--mobile">
+      <ul class="page-header__info__list">
+        <li>
+          <svg class="icon icon-location icon-location--mini">
+            <use xlink:href="img/sprite-svg.svg#location"></use>
+          </svg>
+
+          <span>г. Курск, ул. Карла Маркса, 49</span>
+        </li>
+        <li>
+          <svg class="icon icon-clock icon-clock--mini">
+            <use xlink:href="img/sprite-svg.svg#clock"></use>
+          </svg>
+
+          <span>пн-пт: с 9:00 до 18:00</span>
+        </li>
+        <li>
+          <div class="page-header__call page-header__call--mobile">
+            <a href="#" class="page-header__call__text">
+              Заказать звонок
+            </a>
+
+            @@include('./../select-promo/select-promo-lang.html')
+          </div>
+        </li>
+      </ul>
+    </div>
   </li>
 </ul>

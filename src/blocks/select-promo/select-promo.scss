@@ -2,7 +2,7 @@
   $block-name: &; // #{$block-name}__element {}
 
   & > .dropdown-toggle {
-    display: flex;
+    display: flex !important;
     align-items: center;
     white-space: nowrap;
     border: none;

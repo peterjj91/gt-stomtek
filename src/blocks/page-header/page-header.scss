@@ -82,6 +82,35 @@
         margin-left: 0px;
       }
     }
+
+    &--mobile {
+      @include media-breakpoint-down(lg) {
+        display: block;
+        padding: 0;
+        background-color: white;
+      }
+
+      #{$block-name} {
+        &__info {
+          &__list {
+            @include media-breakpoint-down(lg) {
+              display: block;
+              font-size: 16px;
+              line-height: 33px;
+              color: #7a828c;
+              text-align: center;
+            }
+
+            li {
+              @include media-breakpoint-down(lg) {
+                margin-bottom: -4px;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   &__main {
@@ -155,6 +184,20 @@
         color: #ff961a;
       }
     }
+
+    &--mobile {
+      justify-content: center;
+
+      & > * {
+        &:after {
+          display: none;
+        }
+      }
+
+      .select-promo {
+        margin-left: 10px;
+      }
+    }
   }
 
   &__logo {
@@ -188,7 +231,8 @@
   &__nav {
     @include media-breakpoint-up(sm) {
       display: flex;
-      align-items: flex-start;
+      // align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
       padding-top: 4px;
       padding-bottom: 4px;
@@ -205,9 +249,17 @@
     &__order {
       display: none;
       white-space: nowrap;
+      color: white !important;
+      font-size: 14px;
+      line-height: 32px;
+      font-weight: bold;
+      text-align: center !important;
+      width: 193px;
+      height: 45px;
       
       @include media-breakpoint-up(sm) {
         display: inline-block;
+        line-height: normal;
       }
     }
 
