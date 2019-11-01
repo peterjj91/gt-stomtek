@@ -6,15 +6,11 @@
     padding: 0;
 
     @include media-breakpoint-up(sm) {
-      // padding: 0;
       flex-direction: column !important;
     }
 
     li {
-      // text-align: left;
-
       @include media-breakpoint-up(lg) {
-        // text-align: center;
       }
     }
   }
@@ -40,7 +36,6 @@
       box-shadow: inset 0px -1px 0px 0px #edf2f5, inset -1px 0px 0px 0px #edf2f5;
       
       @include media-breakpoint-up(lg) {
-        // margin: 0px 15px;
       }
       @include media-breakpoint-up(xl) {
         width: auto;
@@ -95,6 +90,7 @@
     .dropdown-menu--droppping {
       border: none;
       padding: 0px 0px;
+      min-width: 185px;
 
       @include media-breakpoint-down(sm) {
         position: relative;
@@ -119,7 +115,7 @@
         @include media-breakpoint-up(lg) {
           display: block;
           height: auto;
-          padding: 4px 22px;
+          padding: 4px 15px 3px 15px;
           text-align: left;
           border-bottom: 1px solid #edf2f5;
         }
@@ -140,6 +136,11 @@
     margin-top: -6px;
     padding-bottom: 0;
     
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     @include media-breakpoint-up(lg) {
       margin-right: 0;
     }
@@ -167,6 +168,8 @@
           line-height: 31px;
           color: #4a545b;
           padding: 0 !important;
+          height: auto !important;
+          border: none;
         }
       }
     }
@@ -183,11 +186,11 @@
       background: white;
 
       @include media-breakpoint-up(sm) {
-        margin-top: 0;
+        margin-top: 1px;
       }
 
       @include media-breakpoint-up(lg) {
-        margin-top: 0px;
+        // margin-top: 0px;
         padding: 0;
       }
     }
@@ -247,10 +250,39 @@
           width: 53px;
         }
 
-        svg {
+        .icon {
           width: 35px;
           height: 35px;
           fill: #ff961a;
+
+          &--cleaning {
+
+          }
+          &--bright {
+            width: 27px;
+          }
+          &--simple2 {
+            width: 23px;
+          }
+          &--braces {
+            width: 26px;
+          }
+          &--implement {
+
+          }
+          &--screw2 {
+
+          }
+          &--search {
+            width: 24px;
+          }
+          &--pulling {
+            width: 42px;
+            height: 37px;
+          }
+          &--screw2 {
+
+          }
         }
       }
     }

@@ -27,10 +27,15 @@
     }
 
     &.slick-prev {
-      left: 50%;
       margin-left: -68px;
       background-image: url(./../img/slider-pointer-left.png);
-
+      
+      @include media-breakpoint-down(lg) {
+        left: 50% !important;
+      }
+      @media(max-width: 1400px) {
+        left: -15px;
+      }
       @include media-breakpoint-up(xl) {
         left: -117px;
         margin-left: 0;
@@ -38,11 +43,17 @@
     }
 
     &.slick-next {
-      right: 50%;
+      // right: 50%;
       margin-right: -68px;
       background-image: url(./../img/slider-pointer-left.png);
       transform: translate(0, -50%) scaleX(-1);
-
+      
+      @include media-breakpoint-down(lg) {
+        right: 50% !important;
+      }
+      @media(max-width: 1400px) {
+        right: -15px;
+      }
       @include media-breakpoint-up(xl) {
         right: -117px;
         margin-right: 0;
@@ -57,14 +68,16 @@
     min-height: 275px;
     padding-top: 41px;
     // padding-bottom: 24px;
-    margin-top: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     padding-bottom: 0px;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0px;
     text-align: center;
 
     @include media-breakpoint-up(xl) {
       margin: 0 auto 5px;
+      margin-top: 4px;
       display: block;
       padding-top: 41px;
       padding-bottom: 20px;

@@ -19,6 +19,7 @@
     letter-spacing: 0.2px;
     text-transform: uppercase;
     box-shadow: inset 0px -2px 0px 0px #ef7317;
+    font-weight: bold;
     outline: none !important;
 
     @include media-breakpoint-up(md) {

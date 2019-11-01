@@ -8,7 +8,6 @@
       justify-content: center;
       align-items: center;
       font-size: 19px;
-      // line-height: 33px;
       font-weight: bold;
       background-color: #ff9110;
       height: 46px;
@@ -16,12 +15,6 @@
       outline: none;
       box-shadow: none;
 
-      @include media-breakpoint-up(lg) {
-        // font-size: 20px;
-        // line-height: 33px;
-        // font-weight: normal;
-        // display: inline-block;
-      }
       @include media-breakpoint-up(xl) {
         font-size: 20px;
         line-height: 33px;
@@ -112,5 +105,9 @@
         
       }
     }
+  }
+
+  &-menu {
+    border-radius: 0;
   }
 }
