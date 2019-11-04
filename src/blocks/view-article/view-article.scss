@@ -1,0 +1,9 @@
+.view-article {
+  $block-name: &; // #{$block-name}__element {}
+  padding-bottom: 44px;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+}

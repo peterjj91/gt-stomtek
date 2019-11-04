@@ -121,6 +121,10 @@
     &__description {
       padding-left: 5px;
       padding-right: 5px;
+
+      @include media-breakpoint-down(md) {
+        padding-bottom: 20px;
+      }
     }
 
     &__title {

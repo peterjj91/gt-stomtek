@@ -31,7 +31,10 @@
     "scrollbar": [],
     "post-promo": [],
     "address-promo": [],
-    "map": []
+    "map": [],
+    "pagination": [],
+    "view-article": [],
+    "service-item": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

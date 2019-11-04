@@ -12,6 +12,11 @@
   @include media-breakpoint-up(xl) {
   }
 
+  &--simple {
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.2);
+    padding-top: 11px;
+  }
+
   &__inner {
     @include media-breakpoint-up(xs) {
     }
@@ -31,7 +36,7 @@
   &__main {
     padding-top: 16px;
     padding-bottom: 4px;
-    
+
     @include media-breakpoint-up(lg) {
       padding-top: 0;
       padding-bottom: 20px;
@@ -73,7 +78,8 @@
             margin-bottom: 2px;
           }
         }
-        &__vk, &__inst {
+        &__vk,
+        &__inst {
           @include media-breakpoint-down(lg) {
             padding-top: 2px;
             width: 58%;
@@ -103,7 +109,8 @@
       color: #7a828c;
       text-align: center;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: #7a828c;
         text-decoration: none;
       }
@@ -118,7 +125,6 @@
     }
 
     &__made {
-      
       @include media-breakpoint-down(lg) {
         width: 213px;
       }
@@ -171,7 +177,7 @@
 
       @include media-breakpoint-up(md) {
         font-size: 15px;
-      line-height: 21px;
+        line-height: 21px;
       }
     }
   }
