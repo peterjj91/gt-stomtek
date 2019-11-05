@@ -5,9 +5,31 @@
   margin-bottom: 54px;
 
   &__img {
-    // max-width: 266px;
     margin: 0 auto;
     margin-bottom: 17px;
+    background-color: white;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width: 300px;
+      background: #777;
+      box-shadow: 0 15px 10px #777;
+      transform: rotate(-3deg);
+    }
+
+    &:after {
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto;
+    }
 
     img {
       width: 100%;

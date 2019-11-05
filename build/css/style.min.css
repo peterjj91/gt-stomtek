@@ -6433,7 +6433,28 @@ a:hover, a:focus,
   margin-bottom: 54px; }
 .license-item__img {
     margin: 0 auto;
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    background-color: white;
+    position: relative; }
+.license-item__img:before, .license-item__img:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width: 300px;
+      background: #777;
+      -webkit-box-shadow: 0 15px 10px #777;
+              box-shadow: 0 15px 10px #777;
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg); }
+.license-item__img:after {
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
+      right: 10px;
+      left: auto; }
 .license-item__img img {
       width: 100%; }
 .license-item__title {
