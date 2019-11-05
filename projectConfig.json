@@ -34,7 +34,8 @@
     "map": [],
     "pagination": [],
     "view-article": [],
-    "service-item": []
+    "service-item": [],
+    "license-item": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

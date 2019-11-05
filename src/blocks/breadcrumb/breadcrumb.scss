@@ -44,4 +44,11 @@
       text-decoration: none;
     }
   }
+
+  &--license {
+    @include media-breakpoint-up(md) {
+      margin-top: 38px;
+      margin-bottom: 20px;
+    }
+  }
 }

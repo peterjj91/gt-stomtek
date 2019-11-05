@@ -6,4 +6,14 @@
     text-transform: uppercase;
     margin-bottom: 22px;
   }
+
+  &--license {
+    #{$block-name} {
+      &__title {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 53px;
+        }
+      }
+    }
+  }
 }

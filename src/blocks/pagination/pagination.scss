@@ -1,4 +1,59 @@
-
 .pagination {
   $block-name: &; // #{$block-name}__element {}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+  margin-bottom: 0;
+
+  .page-item {
+    margin: 0px 7px;
+
+    .page-link {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+      color: #969696;
+      padding: 4px 9px 3px 9px;
+
+      &:hover,
+      &:focus {
+        background-color: #f58625;
+        color: white;
+
+        .icon {
+          fill: white;
+        }
+      }
+
+      .icon {
+        height: 15px;
+      }
+
+      &--prev {
+        @include media-breakpoint-up(md) {
+          margin-right: 14px;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+      &--next {
+        @include media-breakpoint-up(md) {
+          margin-left: 14px;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+  }
 }
