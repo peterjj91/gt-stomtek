@@ -36,7 +36,8 @@
     "view-article": [],
     "service-item": [],
     "license-item": [],
-    "article-item": []
+    "article-item": [],
+    "article": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

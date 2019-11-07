@@ -8,3 +8,50 @@ body {
   @include media-breakpoint-up(lg) {
   }
 }
+
+.list-main {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  li {
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      transform: translate(0%, -50%);
+      left: 0;
+      top: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: #ff981f;
+      border-radius: 50%;
+    }
+  }
+}
+
+.list-numbers {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  counter-reset: section;
+
+  li {
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:before {
+      counter-increment: section;
+      content: counter(section) '.';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      color: #ff981f;
+    }
+  }
+}
