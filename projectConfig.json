@@ -35,7 +35,8 @@
     "pagination": [],
     "view-article": [],
     "service-item": [],
-    "license-item": []
+    "license-item": [],
+    "article-item": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -2,7 +2,7 @@
 <html class="no-js  page" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Лицензии и свидетельства</title>
+    <title>Статьи</title>
     <meta name="description" content="" />
     @@include('_include/page_head.html')
   </head>
@@ -16,23 +16,23 @@
         <main class="page__main-content" role="main">
           <div class="container">
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb breadcrumb--license">
+              <ol class="breadcrumb breadcrumb--articles">
                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Лицензии и свидетельства
+                  Статьи
                 </li>
               </ol>
             </nav>
 
-            <div class="view-article view-article--license">
-              <div class="h2 view-article__title text-center">
-                Лицензии и свидетельства
+            <div class="view-article view-article--articles">
+              <div class="h2 view-article__title">
+                Статьи
               </div>
 
               <div class="view-article__content">
-                <div class="row text-center">
-                  @@loop("blocks/license-item/license-item.html",
-                  "blocks/license-item/license-item.json")
+                <div class="row article-item__wrapper">
+                  @@loop('blocks/article-item/article-item.html',
+                  'blocks/article-item/article-item.json')
                 </div>
 
                 <ul class="pagination">

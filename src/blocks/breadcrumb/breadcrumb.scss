@@ -51,4 +51,11 @@
       margin-bottom: 20px;
     }
   }
+
+  &--articles {
+    @include media-breakpoint-up(md) {
+      margin-top: 31px;
+      margin-bottom: 44px;
+    }
+  }
 }
