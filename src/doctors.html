@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Доктора</title>
+    <meta name="description" content="" />
+    @@include('_include/page_head.html')
+  </head>
+  <body>
+    <div class="page__inner">
+      <header class="page-header" role="banner">
+        @@include('blocks/page-header/page-header.html')
+      </header>
+
+      <div class="page__content">
+        <main class="page__main-content" role="main">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb--doctors">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Доктора
+                </li>
+              </ol>
+            </nav>
+
+            <div class="view-article view-article--doctors">
+              <div class="h2 view-article__title text-center">
+                Доктора
+              </div>
+
+              <div class="view-article__content">
+                <div class="row">
+                  @@loop('./blocks/profile-card/profile-card--doctor.html',
+                  './blocks/profile-card/profile-card-doctors.json')
+                </div>
+
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link page-link--prev" href="#">
+                      <img
+                        src="img/slider-pointer-left.png"
+                        class="icon"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link--next" href="#">
+                      <img
+                        src="img/slider-pointer-right.png"
+                        class="icon"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="page__footer-wrapper">
+        @@include('blocks/page-footer/page-footer--simple.html')
+      </div>
+    </div>
+
+    @@include('_include/page_bottom.html')
+  </body>
+</html>

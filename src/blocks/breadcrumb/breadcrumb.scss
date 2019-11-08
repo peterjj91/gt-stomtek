@@ -70,4 +70,11 @@
       margin-bottom: 51px;
     }
   }
+
+  &--doctors {
+    @include media-breakpoint-up(lg) {
+      margin-top: 38px;
+      margin-bottom: 20px;
+    }
+  }
 }

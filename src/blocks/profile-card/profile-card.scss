@@ -2,7 +2,8 @@
   $block-name: &; // #{$block-name}__element {}
   margin-left: 14px;
   margin-right: 11px;
-  
+  transition: transform cubic-bezier(0.39, 0.58, 0.57, 1) 150ms;
+
   @include media-breakpoint-down(lg) {
     display: block !important;
     margin-left: 14px;
@@ -59,7 +60,8 @@
     font-weight: bold;
     margin-bottom: 2px;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #515151;
     }
   }
@@ -68,5 +70,54 @@
     font-size: 16px;
     line-height: 18px;
     color: #515151;
+  }
+
+  &__btn {
+    margin-top: 20px;
+
+    .btn {
+      min-width: 194px;
+    }
+  }
+
+  &--doctor {
+    margin: 0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 42px;
+
+    @include media-breakpoint-down(lg) {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100% !important;
+      margin-bottom: 42px;
+    }
+
+    &:hover,
+    &:focus {
+      @include media-breakpoint-up(xl) {
+        transform: scale(1.04);
+      }
+
+      #{$block-name} {
+        &__img {
+          @include media-breakpoint-up(xl) {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    #{$block-name} {
+      &__img {
+        height: 320px;
+      }
+      &__description {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 28px;
+      }
+      &__position {
+      }
+    }
   }
 }

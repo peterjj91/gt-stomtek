@@ -4977,6 +4977,32 @@ a:hover, a:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus {
       -webkit-box-shadow: inset 0px -2px 0px 0px #ef7317;
               box-shadow: inset 0px -2px 0px 0px #ef7317; }
+.btn-outline-primary {
+  font-size: 14px;
+  color: #ff9110;
+  background: white;
+  border: none;
+  padding: 12px 26px 12px 26px;
+  border-radius: 21px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 0px 1px #ef7317;
+          box-shadow: 0px 0px 0px 1px #ef7317;
+  font-weight: bold;
+  outline: none !important; }
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    color: white;
+    background: -webkit-gradient(linear, left top, right top, from(#ff9110), to(#ffa740));
+    background: linear-gradient(90deg, #ff9110 0%, #ffa740 100%);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #ef7317, 0px 0px 0px 1px #ef7317;
+            box-shadow: inset 0px -2px 0px 0px #ef7317, 0px 0px 0px 1px #ef7317; }
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: white(255, 145, 16);
+    background: -webkit-gradient(linear, left top, right top, from(#ff9110), to(#ffa740));
+    background: linear-gradient(90deg, #ff9110 0%, #ffa740 100%); }
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+      -webkit-box-shadow: inset 0px -2px 0px 0px #ef7317;
+              box-shadow: inset 0px -2px 0px 0px #ef7317; }
 .btn-light {
   background-color: transparent !important;
   border-color: transparent !important;
@@ -4986,7 +5012,7 @@ a:hover, a:focus,
     -webkit-box-shadow: none;
             box-shadow: none; }
 .dropdown-toggle:after {
-  background-image: url(../img/sprite-03320190920020194.png);
+  background-image: url(../img/sprite-08522548344698975.png);
   background-position: -76px -103px;
   width: 12px;
   height: 9px;
@@ -5264,7 +5290,7 @@ a:hover, a:focus,
 .dropdown-submenu__link:after {
     content: "";
     display: inline-block;
-    background-image: url(../img/sprite-03320190920020194.png);
+    background-image: url(../img/sprite-08522548344698975.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5622,7 +5648,11 @@ a:hover, a:focus,
     margin-top: 20px; }
 .profile-card {
   margin-left: 14px;
-  margin-right: 11px; }
+  margin-right: 11px;
+  -webkit-transition: -webkit-transform cubic-bezier(0.39, 0.58, 0.57, 1) 150ms;
+  transition: -webkit-transform cubic-bezier(0.39, 0.58, 0.57, 1) 150ms;
+  transition: transform cubic-bezier(0.39, 0.58, 0.57, 1) 150ms;
+  transition: transform cubic-bezier(0.39, 0.58, 0.57, 1) 150ms, -webkit-transform cubic-bezier(0.39, 0.58, 0.57, 1) 150ms; }
 .profile-card__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5658,6 +5688,21 @@ a:hover, a:focus,
     font-size: 16px;
     line-height: 18px;
     color: #515151; }
+.profile-card__btn {
+    margin-top: 20px; }
+.profile-card__btn .btn {
+      min-width: 194px; }
+.profile-card--doctor {
+    margin: 0;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 42px; }
+.profile-card--doctor .profile-card__img {
+      height: 320px; }
+.profile-card--doctor .profile-card__description {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 28px; }
 .navbar--header {
   list-style: none;
   padding: 0; }
@@ -5800,7 +5845,7 @@ a:hover, a:focus,
   min-width: 80px;
   font-size: 16px; }
 .select-promo > .dropdown-toggle:after {
-    background-image: url(../img/sprite-03320190920020194.png);
+    background-image: url(../img/sprite-08522548344698975.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5869,24 +5914,24 @@ a:hover, a:focus,
   height: 20px;
   fill: #ff961a; }
 .icon-lang-ru {
-  background-image: url(../img/sprite-03320190920020194.png);
+  background-image: url(../img/sprite-08522548344698975.png);
   background-position: -124px -49px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-lang-en {
-  background-image: url(../img/sprite-03320190920020194.png);
+  background-image: url(../img/sprite-08522548344698975.png);
   background-position: -124px -25px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-burger {
-  background-image: url(../img/sprite-03320190920020194.png);
+  background-image: url(../img/sprite-08522548344698975.png);
   background-position: -29px -76px;
   width: 25px;
   height: 23px; }
 .icon-close {
-  background-image: url(../img/sprite-03320190920020194.png);
+  background-image: url(../img/sprite-08522548344698975.png);
   background-position: -124px 0px;
   width: 21px;
   height: 21px; }
@@ -5969,14 +6014,14 @@ a:hover, a:focus,
 .menu-mobile .btn:after {
     display: none; }
 .menu-mobile .btn[aria-expanded="true"] .icon {
-    background-image: url(../img/sprite-03320190920020194.png);
+    background-image: url(../img/sprite-08522548344698975.png);
     background-position: -83px -76px;
     width: 21px;
     height: 21px;
     margin-right: 14px; }
 .menu-mobile .icon {
   display: inline-block;
-  background-image: url(../img/sprite-03320190920020194.png);
+  background-image: url(../img/sprite-08522548344698975.png);
   background-position: 0px -76px;
   width: 25px;
   height: 23px;
@@ -6130,7 +6175,7 @@ a:hover, a:focus,
   position: relative;
   z-index: -1; }
 .view-block--doctors:after {
-    content: "";
+    content: '';
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -6457,7 +6502,7 @@ a:hover, a:focus,
 .service-item__expand:after {
       content: '';
       display: inline-block;
-      background-image: url(../img/sprite-03320190920020194.png);
+      background-image: url(../img/sprite-08522548344698975.png);
       background-position: -76px -103px;
       width: 12px;
       height: 9px;
@@ -8133,6 +8178,10 @@ a:hover, a:focus,
       margin-bottom: 53px; }
     .view-article--articles .view-article__title {
       margin-bottom: 32px; }
+    .view-article--doctors {
+      padding-bottom: 32px; }
+    .view-article--doctors .view-article__title {
+      margin-bottom: 36px; }
       .article__title {
         padding-right: 100px; }
       .article__date {
@@ -8800,6 +8849,9 @@ a:hover, a:focus,
     .breadcrumb--article {
       margin-top: 31px;
       margin-bottom: 51px; }
+    .breadcrumb--doctors {
+      margin-top: 38px;
+      margin-bottom: 20px; }
     .dropdown--service > .dropdown-menu {
       margin-top: auto;
       width: auto;
@@ -9641,6 +9693,12 @@ a:hover, a:focus,
         padding-left: 0px;
         padding-right: 0px;
         padding-bottom: 0; }
+      .profile-card--doctor:hover, .profile-card--doctor:focus {
+        -webkit-transform: scale(1.04);
+                transform: scale(1.04); }
+      .profile-card--doctor:hover .profile-card__img, .profile-card--doctor:focus .profile-card__img {
+        -webkit-transform: scale(1);
+                transform: scale(1); }
     .navbar--menu {
       margin-top: 0px;
       margin-right: 46px;
@@ -9670,12 +9728,12 @@ a:hover, a:focus,
       padding-left: 0;
       height: 45px; }
       .menu-mobile .btn[aria-expanded="true"] .icon {
-        background-image: url(../img/sprite-03320190920020194.png);
+        background-image: url(../img/sprite-08522548344698975.png);
         background-position: -124px 0px;
         width: 21px;
         height: 21px; }
     .menu-mobile .icon {
-      background-image: url(../img/sprite-03320190920020194.png);
+      background-image: url(../img/sprite-08522548344698975.png);
       background-position: -29px -76px;
       width: 25px;
       height: 23px;
@@ -9827,7 +9885,7 @@ a:hover, a:focus,
     .dropdown--service > .dropdown-toggle:after {
       content: "";
       display: inline-block;
-      background-image: url(../img/sprite-03320190920020194.png);
+      background-image: url(../img/sprite-08522548344698975.png);
       background-position: -92px -103px;
       width: 12px;
       height: 9px;
@@ -9853,6 +9911,11 @@ a:hover, a:focus,
       margin-right: 11px;
       width: 208px !important;
       margin: 0 auto; }
+      .profile-card--doctor {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100% !important;
+        margin-bottom: 42px; }
         .navbar--menu li .btn.page-header__nav__order {
           margin: 0 auto;
           margin-top: 19px;

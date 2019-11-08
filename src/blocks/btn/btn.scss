@@ -11,8 +11,12 @@
   &-primary {
     font-size: 14px;
     color: #ffffff;
-    background: rgb(255,145,16);
-    background: linear-gradient(0deg, rgba(255,145,16,1) 0%, rgba(255,167,64,1) 100%);
+    background: rgb(255, 145, 16);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 145, 16, 1) 0%,
+      rgba(255, 167, 64, 1) 100%
+    );
     border: none;
     padding: 12px 26px 12px 26px;
     border-radius: 21px;
@@ -27,8 +31,12 @@
 
     &:hover,
     &:focus {
-      background: rgb(255,145,16);
-      background: linear-gradient(90deg, rgba(255,145,16,1) 0%, rgba(255,167,64,1) 100%);
+      background: rgb(255, 145, 16);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 145, 16, 1) 0%,
+        rgba(255, 167, 64, 1) 100%
+      );
       box-shadow: inset 0px -2px 0px 0px #ef7317;
     }
 
@@ -36,8 +44,56 @@
     }
 
     &:not(:disabled):not(.disabled):active {
-      background: rgb(255,145,16);
-      background: linear-gradient(90deg, rgba(255,145,16,1) 0%, rgba(255,167,64,1) 100%);
+      background: rgb(255, 145, 16);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 145, 16, 1) 0%,
+        rgba(255, 167, 64, 1) 100%
+      );
+
+      &:focus {
+        box-shadow: inset 0px -2px 0px 0px #ef7317;
+      }
+    }
+  }
+
+  &-outline-primary {
+    font-size: 14px;
+    color: rgb(255, 145, 16);
+    background: white;
+    border: none;
+    padding: 12px 26px 12px 26px;
+    border-radius: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 0px 1px #ef7317;
+    font-weight: bold;
+    outline: none !important;
+
+    @include media-breakpoint-up(md) {
+    }
+
+    &:hover,
+    &:focus {
+      color: white;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 145, 16, 1) 0%,
+        rgba(255, 167, 64, 1) 100%
+      );
+      box-shadow: inset 0px -2px 0px 0px #ef7317, 0px 0px 0px 1px #ef7317;
+    }
+
+    &:active {
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      color: white(255, 145, 16);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 145, 16, 1) 0%,
+        rgba(255, 167, 64, 1) 100%
+      );
 
       &:focus {
         box-shadow: inset 0px -2px 0px 0px #ef7317;
