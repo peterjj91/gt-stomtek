@@ -77,4 +77,11 @@
       margin-bottom: 20px;
     }
   }
+
+  &--doctor {
+    @include media-breakpoint-up(lg) {
+      margin-top: 31px;
+      margin-bottom: 0px;
+    }
+  }
 }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Доктор</title>
+    <meta name="description" content="" />
+    @@include('_include/page_head.html')
+  </head>
+  <body>
+    <div class="page__inner">
+      <header class="page-header" role="banner">
+        @@include('blocks/page-header/page-header.html')
+      </header>
+
+      <div class="page__content">
+        <main class="page__main-content" role="main">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb--doctor">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#">Доктора</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Мелонян Карен Наирович
+                </li>
+              </ol>
+            </nav>
+
+            <div class="view-article view-article--doctor">
+              <div class="article-doctor">
+                <div class="article-doctor__img">
+                  <img src="img/doctor-article-img1.png" class="img" alt="" />
+                </div>
+
+                <div class="article-doctor__info">
+                  <div class="h2 article-doctor__title">
+                    Мелоян Карен Наирович
+                  </div>
+
+                  <div class="article-doctor__description row">
+                    <div class="article-doctor__description__main">
+                      <div class="article-doctor__label">
+                        Врач стоматолог-ортопед
+                      </div>
+
+                      <p>
+                        Внимательный, знающий специалист с многолетним опытом
+                        работы.
+                      </p>
+
+                      <p>
+                        Доктор специализируется на эстетике. В своей ежедневной
+                        практике использует самые современные направления
+                        создания красивой улыбки-это виниры, безметалловые
+                        коронки из циркона и Имакс.
+                      </p>
+
+                      <p>
+                        Важной частью работы ортопеда является помощь пациентам
+                        с бруксизмом, стираемостью, болями и щелчками в
+                        височно-нижнечелюстных суставах.
+                      </p>
+
+                      <a href="#" class="btn btn-primary">Запись на прием</a>
+                    </div>
+
+                    <div class="article-doctor__description__side">
+                      <p>
+                        Опыт работы: <br />
+                        <strong>10 лет</strong>
+                      </p>
+
+                      <p>
+                        Отделение: <br />
+                        <strong>Ортопедия</strong>
+                      </p>
+                    </div>
+                  </div>
+
+                  <ul class="article-doctor__list">
+                    <li class="active"><a href="#">Образование</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Фотографии</a></li>
+                  </ul>
+
+                  <div class="article-doctor__block">
+                    <div class="h3">образование</div>
+
+                    <div class="article-doctor__edu">
+                      <div class="article-doctor__edu__block">
+                        <ul class="article-doctor__edu__list">
+                          <li>
+                            <p><strong>23.06.2009</strong></p>
+                            <p>Диплом по специальности «Стоматолгия»</p>
+                          </li>
+                          <li>
+                            <p><strong>24.02.2014</strong></p>
+                            <p>Сертификат «Стоматология общей практики»</p>
+                          </li>
+                          <li>
+                            <p><strong>16.12.2014</strong></p>
+                            <p>Сертификат «Стоматология ортопедическая»</p>
+                          </li>
+                          <li>
+                            <p><strong>07.07.2014</strong></p>
+                            <p>Сертификат «Стоматология хирургическая»</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="view-article__content">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link page-link--prev" href="#">
+                        <img
+                          src="img/slider-pointer-left.png"
+                          class="icon"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link page-link--next" href="#">
+                        <img
+                          src="img/slider-pointer-right.png"
+                          class="icon"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="page__footer-wrapper">
+        @@include('blocks/page-footer/page-footer--simple.html')
+      </div>
+    </div>
+
+    @@include('_include/page_bottom.html')
+  </body>
+</html>

@@ -37,7 +37,8 @@
     "service-item": [],
     "license-item": [],
     "article-item": [],
-    "article": []
+    "article": [],
+    "article-doctor": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

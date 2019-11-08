@@ -1,0 +1,142 @@
+.article-doctor {
+  $block-name: &; // #{$block-name}__element {}
+
+  &__img {
+    width: 358px;
+    float: right;
+    padding: 7px;
+    margin-right: 3px;
+    margin-top: -8px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  &__description {
+    @include make-row;
+    margin-bottom: 19px;
+
+    &__main {
+      padding-left: 15px;
+      padding-right: 15px;
+      @include make-col(12);
+
+      @include media-breakpoint-up(md) {
+        @include make-col(9);
+      }
+
+      .btn {
+        margin-top: 16px;
+      }
+    }
+
+    &__side {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 9px;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(3);
+        padding-left: 38px;
+      }
+
+      p {
+        font-size: 18px !important;
+        color: #909090 !important;
+        margin-bottom: 65px !important;
+
+        @include media-breakpoint-up(md) {
+        }
+      }
+
+      strong {
+        display: inline-block;
+        margin-top: 3px;
+        font-weight: normal;
+        font-size: 16px;
+        color: #515151;
+      }
+    }
+  }
+
+  &__info {
+    padding-top: 35px;
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      color: #515151;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9110;
+    margin-bottom: 17px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      padding-right: 42px;
+      padding-left: 42px;
+      position: relative;
+
+      & + li {
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 2px;
+          height: 27px;
+          background-color: #dcdfe1;
+        }
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &.active {
+        a {
+          font-weight: bold;
+          color: #ff9110;
+          display: inline-block;
+          margin-top: -4px;
+
+          &:hover,
+          &:focus {
+            color: #ff9110;
+          }
+        }
+      }
+    }
+
+    a {
+      color: #888888;
+      font-size: 16px;
+      line-height: 36px;
+
+      &:hover,
+      &:focus {
+        color: #888888;
+      }
+    }
+  }
+}
