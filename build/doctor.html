@@ -357,8 +357,8 @@
 
       <div class="page__content">
         <main class="page__main-content" role="main">
-          <div class="container">
-            <nav aria-label="breadcrumb">
+          <nav aria-label="breadcrumb">
+            <div class="container">
               <ol class="breadcrumb breadcrumb--doctor">
                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
                 <li class="breadcrumb-item"><a href="#">Доктора</a></li>
@@ -366,10 +366,12 @@
                   Мелонян Карен Наирович
                 </li>
               </ol>
-            </nav>
+            </div>
+          </nav>
 
-            <div class="view-article view-article--doctor">
-              <div class="article-doctor">
+          <div class="article-doctor">
+            <div class="article-doctor__top">
+              <div class="container">
                 <div class="article-doctor__img">
                   <img src="img/doctor-article-img1.png" class="img" alt="" />
                 </div>
@@ -420,75 +422,272 @@
                   </div>
 
                   <ul class="article-doctor__list">
-                    <li class="active"><a href="#">Образование</a></li>
-                    <li><a href="#">Сертификаты</a></li>
-                    <li><a href="#">Фотографии</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#sertificate">Сертификаты</a></li>
+                    <li><a href="#photos">Фотографии</a></li>
                   </ul>
+                </div>
+              </div>
+            </div>
 
-                  <div class="article-doctor__block">
-                    <div class="h3">образование</div>
+            <div class="article-doctor__content">
+              <div class="container">
+                <div class="article-doctor__block" id="education">
+                  <div class="h3 text-uppercase text-center">образование</div>
 
-                    <div class="article-doctor__edu">
-                      <div class="article-doctor__edu__block">
-                        <ul class="article-doctor__edu__list">
-                          <li>
-                            <p><strong>23.06.2009</strong></p>
-                            <p>Диплом по специальности «Стоматолгия»</p>
-                          </li>
-                          <li>
-                            <p><strong>24.02.2014</strong></p>
-                            <p>Сертификат «Стоматология общей практики»</p>
-                          </li>
-                          <li>
-                            <p><strong>16.12.2014</strong></p>
-                            <p>Сертификат «Стоматология ортопедическая»</p>
-                          </li>
-                          <li>
-                            <p><strong>07.07.2014</strong></p>
-                            <p>Сертификат «Стоматология хирургическая»</p>
-                          </li>
-                        </ul>
-                      </div>
+                  <div class="article-doctor__edu">
+                    <div class="article-doctor__edu__block">
+                      <ul class="article-doctor__edu__list">
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            23.06.2009
+                          </div>
+                          <p>Диплом по специальности «Стоматолгия»</p>
+                        </li>
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            24.02.2014
+                          </div>
+                          <p>Сертификат «Стоматология общей практики»</p>
+                        </li>
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            16.12.2014
+                          </div>
+                          <p>Сертификат «Стоматология ортопедическая»</p>
+                        </li>
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            07.07.2014
+                          </div>
+                          <p>Сертификат «Стоматология хирургическая»</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="article-doctor__edu__block">
+                      <ul class="article-doctor__edu__list">
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            23.06.2009
+                          </div>
+                          <p>Диплом по специальности «Стоматолгия»</p>
+                        </li>
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            24.02.2014
+                          </div>
+                          <p>Сертификат «Стоматология общей практики»</p>
+                        </li>
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            16.12.2014
+                          </div>
+                          <p>Сертификат «Стоматология ортопедическая»</p>
+                        </li>
+                        <li>
+                          <div class="article-doctor__edu__title">
+                            07.07.2014
+                          </div>
+                          <p>Сертификат «Стоматология хирургическая»</p>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
 
-                <div class="view-article__content">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link page-link--prev" href="#">
-                        <img
-                          src="img/slider-pointer-left.png"
-                          class="icon"
-                          alt=""
-                        />
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">4</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">5</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link page-link--next" href="#">
-                        <img
-                          src="img/slider-pointer-right.png"
-                          class="icon"
-                          alt=""
-                        />
-                      </a>
-                    </li>
-                  </ul>
+                <div class="article-doctor__section" id="sertificate">
+                  <div
+                    class="text-center text-uppercase article-doctor__section__title"
+                  >
+                    Сертификаты
+                  </div>
+
+                  <div class="slider-license__wrapper">
+                    <div class="slider slider-sertificate">
+                      <div>
+                        <div class="slider-license__item slider-license__item--mini">
+                          <img src="img/license-img1.png" class="img" />
+
+                          <div class="slider-license__description">
+                            <div class="slider-license__title">
+                              Свидетельство о государственной регистрации
+                            </div>
+                            <p>Восстановление зубов на подвижной нижней челюсти имеет.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item slider-license__item--mini">
+                          <img src="img/license-img1.png" class="img" />
+
+                          <div class="slider-license__description">
+                            <div class="slider-license__title">
+                              Свидетельство о государственной регистрации
+                            </div>
+                            <p>Восстановление зубов на подвижной нижней челюсти имеет.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item slider-license__item--mini">
+                          <img src="img/license-img1.png" class="img" />
+
+                          <div class="slider-license__description">
+                            <div class="slider-license__title">
+                              Свидетельство о государственной регистрации
+                            </div>
+                            <p>Восстановление зубов на подвижной нижней челюсти имеет.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item slider-license__item--mini">
+                          <img src="img/license-img1.png" class="img" />
+
+                          <div class="slider-license__description">
+                            <div class="slider-license__title">
+                              Свидетельство о государственной регистрации
+                            </div>
+                            <p>Восстановление зубов на подвижной нижней челюсти имеет.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item slider-license__item--mini">
+                          <img src="img/license-img1.png" class="img" />
+
+                          <div class="slider-license__description">
+                            <div class="slider-license__title">
+                              Свидетельство о государственной регистрации
+                            </div>
+                            <p>Восстановление зубов на подвижной нижней челюсти имеет.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div
+                  class="article-doctor__section article-doctor__section--photos"
+                  id="photos"
+                >
+                  <div
+                    class="text-center text-uppercase article-doctor__section__title"
+                  >
+                    Фотографии
+                  </div>
+
+                  <div class="slider-license__wrapper">
+                    <div class="slider slider-photos">
+                      <div>
+                        <div class="slider-license__item">
+                          <img src="img/doctor-work-img1.png" class="img" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item">
+                          <img src="img/doctor-work-img2.png" class="img" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item">
+                          <img src="img/doctor-work-img3.png" class="img" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item">
+                          <img src="img/doctor-work-img1.png" class="img" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slider-license__item">
+                          <img src="img/doctor-work-img2.png" class="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="article-doctor__section">
+                  <div
+                    class="text-center text-uppercase article-doctor__section__title"
+                  >
+                    Другие врачи
+                  </div>
+
+                  <div class="scroll-doctors">
+                    <div class="scroll-doctors__content">
+                      <div class="profile-card__wrapper" id="slider-specialist">
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img1.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                            врач</div>
+                          </div>
+                        </div>
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img2.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                              врач</div>
+                          </div>
+                        </div>
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img3.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                              врач</div>
+                          </div>
+                        </div>
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img4.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                              врач</div>
+                          </div>
+                        </div>
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img1.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                              врач</div>
+                          </div>
+                        </div>
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img3.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                              врач</div>
+                          </div>
+                        </div>
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img4.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                              врач</div>
+                          </div>
+                        </div>
+                        <div class="profile-card">
+                          <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img1.png)"></a>
+                          <div class="profile-card__description">
+                            <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                            <div class="profile-card__position">главный
+                              врач</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

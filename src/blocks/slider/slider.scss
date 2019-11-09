@@ -29,11 +29,11 @@
     &.slick-prev {
       margin-left: -68px;
       background-image: url(./../img/slider-pointer-left.png);
-      
+
       @include media-breakpoint-down(lg) {
         left: 50% !important;
       }
-      @media(max-width: 1400px) {
+      @media (max-width: 1400px) {
         left: -15px;
       }
       @include media-breakpoint-up(xl) {
@@ -47,11 +47,11 @@
       margin-right: -68px;
       background-image: url(./../img/slider-pointer-left.png);
       transform: translate(0, -50%) scaleX(-1);
-      
+
       @include media-breakpoint-down(lg) {
         right: 50% !important;
       }
-      @media(max-width: 1400px) {
+      @media (max-width: 1400px) {
         right: -15px;
       }
       @include media-breakpoint-up(xl) {
@@ -232,57 +232,97 @@
       }
     }
 
-    &__title {
-      margin-top: 27px;
-      font-family: $font-pt-serif;
-      font-size: 16px;
-      line-height: 20px;
-      color: #899098;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-
-      @include media-breakpoint-up(xl) {
-        margin-top: 30px;
-        font-size: 24px;
-        line-height: 35px;
-        color: #7a828c;
-        margin-bottom: 0;
-        text-transform: none;
-      }
-    }
-
-    .img {
-      box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
-      margin: 0 auto;
-      width: 253px;
-      
-      @include media-breakpoint-up(xl) {
-        width: auto;
-      }
-    }
-
-    .flipster__item {
+    &__item {
       text-align: center;
-    }
+      padding-left: 10px;
+      padding-right: 10px;
 
-    p {
-      font-size: 14px;
-      line-height: 16px;
-      color: #515151;
-
-      @include media-breakpoint-up(xl) {
-        display: none;
+      @include media-breakpoint-up(md) {
+        padding: 0;
       }
-    }
 
-    &__description {
-      max-width: 255px;
-      width: 100%;
-      margin: 0 auto;
+      .slider-license {
+        &__title {
+          margin-top: 27px;
+          font-family: $font-pt-serif;
+          font-size: 16px;
+          line-height: 20px;
+          color: #899098;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 8px;
 
-      @include media-breakpoint-down(xl) {
-        
+          @include media-breakpoint-up(xl) {
+            margin-top: 30px;
+            font-size: 24px;
+            line-height: 35px;
+            color: #7a828c;
+            margin-bottom: 0;
+            text-transform: none;
+          }
+        }
+
+        &__description {
+          max-width: 255px;
+          width: 100%;
+          margin: 0 auto;
+
+          @include media-breakpoint-down(xl) {
+          }
+        }
+      }
+
+      .flipster__item {
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        color: #515151;
+
+        @include media-breakpoint-up(xl) {
+          display: none;
+        }
+      }
+
+      .img {
+        box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        width: 253px;
+
+        @include media-breakpoint-up(xl) {
+          width: auto;
+        }
+      }
+
+      &--mini {
+        .img {
+          max-width: 248px;
+          width: 100%;
+        }
+
+        .slider-license {
+          &__title {
+            @include media-breakpoint-up(xl) {
+              margin-top: 16px;
+              font-size: 16px;
+              line-height: 20px;
+              text-transform: uppercase;
+              margin-bottom: 8px;
+            }
+          }
+          &__description {
+            @include media-breakpoint-up(xl) {
+            }
+          }
+        }
+
+        p {
+          @include media-breakpoint-up(xl) {
+            display: block;
+          }
+        }
       }
     }
   }
@@ -340,7 +380,7 @@
   }
 }
 .flipster--loop {
-  .flipster__item { 
+  .flipster__item {
     position: absolute;
   }
 
@@ -350,7 +390,7 @@
   .flipster__item--future-2 {
     transform: translateX(100%);
   }
-  
+
   .flipster__item--past-1 {
     transform: translateX(-50%);
   }
@@ -360,9 +400,10 @@
 }
 
 .flipster--infinite-carousel {
-  .flipster__container, .flipster__item, {
+  .flipster__container,
+  .flipster__item {
     transition: all 350ms ease-in-out;
-    transition-timing-function: cubic-bezier(.56,.12,.12,.98);
+    transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
   }
 
   .flipster__item__content {
@@ -395,29 +436,29 @@
   }
 
   .flipster__item--past .flipster__item__content,
-  .flipster__item--future .flipster__item__content { 
-    transform: scale(0.4); 
+  .flipster__item--future .flipster__item__content {
+    transform: scale(0.4);
   }
 
-  .flipster__item--past-2 .flipster__item__content { 
+  .flipster__item--past-2 .flipster__item__content {
     // transform: translateX(-75%) rotateY(0deg) scale(0.79);
     transform: translateX(-154%) rotateY(0deg) scale(0.66);
   }
-  .flipster__item--future-2 .flipster__item__content { 
+  .flipster__item--future-2 .flipster__item__content {
     // transform: translateX(75%) rotateY(-0deg) scale(0.79);
     transform: translateX(154%) rotateY(0deg) scale(0.66);
   }
 
-  .flipster__item--past-1 .flipster__item__content { 
+  .flipster__item--past-1 .flipster__item__content {
     // transform: translateX(-50%) rotateY(0deg) scale(0.79);
     transform: translateX(-93%) rotateY(0deg) scale(0.78);
   }
-  .flipster__item--future-1 .flipster__item__content { 
+  .flipster__item--future-1 .flipster__item__content {
     // transform: translateX(50%) rotateY(-0deg) scale(0.79);
     transform: translateX(93%) rotateY(0deg) scale(0.78);
   }
 
-  .flipster__item--current .flipster__item__content { 
+  .flipster__item--current .flipster__item__content {
     transform: translateX(0) rotateY(0deg) scale(1);
   }
 }
