@@ -1,0 +1,30 @@
+.article-review {
+  $block-name: &; // #{$block-name}__element {}
+
+  &__block {
+    position: relative;
+    margin-bottom: 18px;
+    padding-bottom: 28px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      transform: translate(-50%, 0);
+      bottom: 0;
+      left: 50%;
+      width: 94px;
+      height: 3px;
+      background-color: #dcdcdc;
+    }
+
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &__answer {
+    margin-top: 6px;
+  }
+}

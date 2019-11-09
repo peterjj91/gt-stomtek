@@ -5012,7 +5012,7 @@ a:hover, a:focus,
     -webkit-box-shadow: none;
             box-shadow: none; }
 .dropdown-toggle:after {
-  background-image: url(../img/sprite-024278734090216947.png);
+  background-image: url(../img/sprite-0052009560055805926.png);
   background-position: -76px -103px;
   width: 12px;
   height: 9px;
@@ -5290,7 +5290,7 @@ a:hover, a:focus,
 .dropdown-submenu__link:after {
     content: "";
     display: inline-block;
-    background-image: url(../img/sprite-024278734090216947.png);
+    background-image: url(../img/sprite-0052009560055805926.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5586,6 +5586,29 @@ a:hover, a:focus,
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 19px; }
+.review-card--article .review-card__item__description {
+    max-width: 946px;
+    margin: 0 auto;
+    position: relative; }
+.review-card--dark {
+    background-color: #dcdcdc; }
+.review-card--dark:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 235px;
+      background-image: url("./../img/review-icon.png");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: -33px -37px; }
+.review-card--dark .review-card__date {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      margin-bottom: 12px; }
 .view-main {
   padding-top: 30px;
   width: 100%;
@@ -5853,7 +5876,7 @@ a:hover, a:focus,
   min-width: 80px;
   font-size: 16px; }
 .select-promo > .dropdown-toggle:after {
-    background-image: url(../img/sprite-024278734090216947.png);
+    background-image: url(../img/sprite-0052009560055805926.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5922,24 +5945,24 @@ a:hover, a:focus,
   height: 20px;
   fill: #ff961a; }
 .icon-lang-ru {
-  background-image: url(../img/sprite-024278734090216947.png);
+  background-image: url(../img/sprite-0052009560055805926.png);
   background-position: -124px -49px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-lang-en {
-  background-image: url(../img/sprite-024278734090216947.png);
+  background-image: url(../img/sprite-0052009560055805926.png);
   background-position: -124px -25px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-burger {
-  background-image: url(../img/sprite-024278734090216947.png);
+  background-image: url(../img/sprite-0052009560055805926.png);
   background-position: -29px -76px;
   width: 25px;
   height: 23px; }
 .icon-close {
-  background-image: url(../img/sprite-024278734090216947.png);
+  background-image: url(../img/sprite-0052009560055805926.png);
   background-position: -124px 0px;
   width: 21px;
   height: 21px; }
@@ -6022,14 +6045,14 @@ a:hover, a:focus,
 .menu-mobile .btn:after {
     display: none; }
 .menu-mobile .btn[aria-expanded="true"] .icon {
-    background-image: url(../img/sprite-024278734090216947.png);
+    background-image: url(../img/sprite-0052009560055805926.png);
     background-position: -83px -76px;
     width: 21px;
     height: 21px;
     margin-right: 14px; }
 .menu-mobile .icon {
   display: inline-block;
-  background-image: url(../img/sprite-024278734090216947.png);
+  background-image: url(../img/sprite-0052009560055805926.png);
   background-position: 0px -76px;
   width: 25px;
   height: 23px;
@@ -6510,7 +6533,7 @@ a:hover, a:focus,
 .service-item__expand:after {
       content: '';
       display: inline-block;
-      background-image: url(../img/sprite-024278734090216947.png);
+      background-image: url(../img/sprite-0052009560055805926.png);
       background-position: -76px -103px;
       width: 12px;
       height: 9px;
@@ -6788,6 +6811,24 @@ a:hover, a:focus,
   margin-bottom: 30px; }
 .article-doctor__section__title {
     margin-bottom: 34px; }
+.article-review__block {
+  position: relative;
+  margin-bottom: 18px;
+  padding-bottom: 28px; }
+.article-review__block:before {
+    content: '';
+    position: absolute;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    bottom: 0;
+    left: 50%;
+    width: 94px;
+    height: 3px;
+    background-color: #dcdcdc; }
+.article-review__block:last-child:before {
+    display: none; }
+.article-review__answer {
+  margin-top: 6px; }
 @media (min-width: 576px) {
     .container {
       max-width: 100%; }
@@ -8316,6 +8357,8 @@ a:hover, a:focus,
       padding-bottom: 32px; }
     .view-article--doctors .view-article__title {
       margin-bottom: 36px; }
+    .view-article--reviews .view-article__title {
+      margin-bottom: 30px; }
       .article__title {
         padding-right: 100px; }
       .article__date {
@@ -9011,6 +9054,9 @@ a:hover, a:focus,
     .breadcrumb--doctor {
       margin-top: 31px;
       margin-bottom: 0px; }
+    .breadcrumb--reviews {
+      margin-top: 55px;
+      margin-bottom: 49px; }
     .dropdown--service > .dropdown-menu {
       margin-top: auto;
       width: auto;
@@ -9030,6 +9076,14 @@ a:hover, a:focus,
       .review-card__date {
         top: 22px;
         right: 22px; }
+    .review-card--article {
+      padding-top: 31px;
+      min-height: auto;
+      padding-bottom: 12px;
+      margin-bottom: 0; }
+    .review-card--article .review-card__date {
+      right: 0px;
+      top: 5px; }
     .profile-card {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 209px;
@@ -9908,12 +9962,12 @@ a:hover, a:focus,
       padding-left: 0;
       height: 45px; }
       .menu-mobile .btn[aria-expanded="true"] .icon {
-        background-image: url(../img/sprite-024278734090216947.png);
+        background-image: url(../img/sprite-0052009560055805926.png);
         background-position: -124px 0px;
         width: 21px;
         height: 21px; }
     .menu-mobile .icon {
-      background-image: url(../img/sprite-024278734090216947.png);
+      background-image: url(../img/sprite-0052009560055805926.png);
       background-position: -29px -76px;
       width: 25px;
       height: 23px;
@@ -10069,7 +10123,7 @@ a:hover, a:focus,
     .dropdown--service > .dropdown-toggle:after {
       content: "";
       display: inline-block;
-      background-image: url(../img/sprite-024278734090216947.png);
+      background-image: url(../img/sprite-0052009560055805926.png);
       background-position: -92px -103px;
       width: 12px;
       height: 9px;

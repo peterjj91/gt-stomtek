@@ -84,4 +84,11 @@
       margin-bottom: 0px;
     }
   }
+
+  &--reviews {
+    @include media-breakpoint-up(lg) {
+      margin-top: 55px;
+      margin-bottom: 49px;
+    }
+  }
 }

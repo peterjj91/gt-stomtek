@@ -65,4 +65,61 @@
     line-height: 18px;
     margin-bottom: 19px;
   }
+
+  &--article {
+    @include media-breakpoint-up(lg) {
+      padding-top: 31px;
+      min-height: auto;
+      padding-bottom: 12px;
+      margin-bottom: 0;
+    }
+
+    #{$block-name} {
+      &__title {
+      }
+      &__item {
+        &__description {
+          max-width: 946px;
+          margin: 0 auto;
+          position: relative;
+        }
+      }
+      &__date {
+        @include media-breakpoint-up(lg) {
+          right: 0px;
+          top: 5px;
+        }
+      }
+    }
+  }
+
+  &--dark {
+    background-color: #dcdcdc;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 235px;
+      background-image: url('./../img/review-icon.png');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: -33px -37px;
+    }
+
+    #{$block-name} {
+      &__date {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-bottom: 12px;
+
+        @include media-breakpoint-up(lg) {
+        }
+      }
+    }
+  }
 }
