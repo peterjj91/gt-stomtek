@@ -40,7 +40,9 @@
     "article": [],
     "article-doctor": [],
     "article-review": [],
-    "article-sales": []
+    "article-sales": [],
+    "table": [],
+    "pay-promo": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

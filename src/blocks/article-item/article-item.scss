@@ -21,6 +21,11 @@
     &__title {
       margin-bottom: 31px;
     }
+
+    &--price {
+      margin-top: 57px;
+      margin-bottom: 76px;
+    }
   }
 
   &__img {
@@ -63,6 +68,17 @@
     line-height: 20px;
     font-weight: bold;
     color: #515151;
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 17px;
+    right: 26px;
+    font-family: $font-pt-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ef7317;
+    font-weight: bold;
   }
 
   &__popup {
