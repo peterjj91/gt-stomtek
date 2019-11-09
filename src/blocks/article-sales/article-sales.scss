@@ -1,0 +1,36 @@
+.article-sales {
+  $block-name: &; // #{$block-name}__element {}
+
+  &__nav {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a,
+    .btn,
+    .bootstrap-select {
+      font-size: 14px;
+      line-height: 24px;
+      color: #4a545b;
+      margin-right: 42px;
+      font-weight: bold;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        color: #ff9200;
+      }
+    }
+
+    &__block {
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 33px;
+      }
+    }
+  }
+}

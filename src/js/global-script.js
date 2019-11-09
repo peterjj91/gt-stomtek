@@ -57,7 +57,6 @@ $(document).ready(function() {
 
 const mq = window.matchMedia('(min-width: 1200px)');
 if (mq.matches) {
-  console.log('if', mq.matches);
   if ($('.scroll-doctors').length) {
     const perfectSideScroll = new PerfectScrollbar('.scroll-doctors', {
       wheelSpeed: 2,
@@ -201,4 +200,8 @@ $(document).ready(function() {
       },
     ],
   });
+});
+
+$(document).ready(function() {
+  $('.select-simple').selectpicker();
 });

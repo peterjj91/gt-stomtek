@@ -32,7 +32,7 @@
 
   &__content {
     text-align: center;
-    
+
     @include media-breakpoint-up(xl) {
       padding-top: 184px;
       text-align: left;
@@ -67,6 +67,18 @@
 
     .btn {
       min-width: 195px;
+    }
+  }
+
+  &--right {
+    #{$block-name} {
+      &__content {
+        @include media-breakpoint-up(lg) {
+          max-width: 50%;
+          margin: 0 auto;
+          margin-right: 0px;
+        }
+      }
     }
   }
 }

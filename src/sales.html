@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Акции</title>
+    <meta name="description" content="" />
+    @@include('_include/page_head.html')
+  </head>
+  <body>
+    <div class="page__inner">
+      <header class="page-header" role="banner">
+        @@include('blocks/page-header/page-header.html')
+      </header>
+
+      <div class="page__content">
+        <main class="page__main-content" role="main">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb--sales">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Акции
+                </li>
+              </ol>
+            </nav>
+          </div>
+
+          <div class="view-article view-article--sales">
+            <div class="container">
+              <div class="h2 view-article__title text-center">
+                Акции
+              </div>
+            </div>
+
+            <div class="view-article__content">
+              <div class="article-sales">
+                <div class="container">
+                  <div class="article-sales__nav">
+                    <div class="article-sales__nav__block">
+                      <a href="#" class="">Все</a>
+                      <a href="#" class="active">Новые</a>
+                    </div>
+
+                    <div class="article-sales__nav__block">
+                      <select
+                        class="select-promo select-promo--simple show-menu-arrow"
+                        data-width="fit"
+                      >
+                        <option>За год</option>
+                        <option>За пол года</option>
+                      </select>
+
+                      <select
+                        class="select-promo select-promo--simple show-menu-arrow"
+                        data-width="fit"
+                      >
+                        <option>2019</option>
+                        <option>2018</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="article-sales__block__wrapper">
+                  <div class="article-sales__block">
+                    @@include('blocks/slider/slider--full.html')
+                  </div>
+                  <div class="article-sales__block">
+                    <div class="slider-full">
+                      <div class="slider slider-full-nav">
+                        <div>
+                          <div class="article-quick__img__wrapper">
+                            <div
+                              class="article-quick__img"
+                              style="background-image: url(img/slider-img-full.jpg)"
+                            ></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="article-quick__img__wrapper">
+                            <div
+                              class="article-quick__img"
+                              style="background-image: url(img/view-main.jpg)"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="container">
+                        <div class="slider slider-full-for">
+                          <div>
+                            <div class="article-quick article-quick--right">
+                              <div class="article-quick__content">
+                                <div class="article-quick__description">
+                                  <div class="article-quick__title h2">
+                                    ВИНИРЫ - ИДЕАЛЬНАЯ
+                                  </div>
+                                  <div class="article-quick__title h2">
+                                    В КОРОТКИЕ СРОКИ!
+                                  </div>
+                                </div>
+
+                                <div class="article-quick__footer">
+                                  <a href="#" class="btn btn-primary"
+                                    >Подробнее</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="article-quick article-quick--right">
+                              <div class="article-quick__content">
+                                <div class="article-quick__description">
+                                  <div class="article-quick__title h2">
+                                    ВИНИРЫ - ИДЕАЛЬНАЯ другое
+                                  </div>
+                                  <div class="article-quick__title h2">
+                                    В КОРОТКИЕ СРОКИ! другое
+                                  </div>
+                                </div>
+
+                                <div class="article-quick__footer">
+                                  <a href="#" class="btn btn-primary"
+                                    >Подробнее</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article-sales__block">
+                    @@include('blocks/slider/slider--full.html')
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="page__footer-wrapper">
+        @@include('blocks/page-footer/page-footer--simple.html')
+      </div>
+    </div>
+
+    @@include('_include/page_bottom.html')
+  </body>
+</html>

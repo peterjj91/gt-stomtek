@@ -91,4 +91,11 @@
       margin-bottom: 49px;
     }
   }
+
+  &--sales {
+    @include media-breakpoint-up(lg) {
+      margin-top: 58px;
+      margin-bottom: 33px;
+    }
+  }
 }

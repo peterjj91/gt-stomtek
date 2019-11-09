@@ -5012,7 +5012,7 @@ a:hover, a:focus,
     -webkit-box-shadow: none;
             box-shadow: none; }
 .dropdown-toggle:after {
-  background-image: url(../img/sprite-0052009560055805926.png);
+  background-image: url(../img/sprite-08015006393699202.png);
   background-position: -76px -103px;
   width: 12px;
   height: 9px;
@@ -5290,7 +5290,7 @@ a:hover, a:focus,
 .dropdown-submenu__link:after {
     content: "";
     display: inline-block;
-    background-image: url(../img/sprite-0052009560055805926.png);
+    background-image: url(../img/sprite-08015006393699202.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5859,7 +5859,9 @@ a:hover, a:focus,
 .navbar-nav--menu .nav-link__icon .icon--pulling {
           width: 42px;
           height: 37px; }
-.select-promo > .dropdown-toggle {
+.select-promo > .dropdown-toggle:focus {
+  outline: none !important; }
+.select-promo--lang > .dropdown-toggle {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -5875,8 +5877,8 @@ a:hover, a:focus,
           box-shadow: none !important;
   min-width: 80px;
   font-size: 16px; }
-.select-promo > .dropdown-toggle:after {
-    background-image: url(../img/sprite-0052009560055805926.png);
+.select-promo--lang > .dropdown-toggle:after {
+    background-image: url(../img/sprite-08015006393699202.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5885,9 +5887,7 @@ a:hover, a:focus,
     margin-top: 1px;
     margin-right: 10px;
     margin-left: 0; }
-.select-promo > .dropdown-toggle:focus {
-    outline: none !important; }
-.select-promo.show-menu-arrow .dropdown-toggle .filter-option:after {
+.select-promo--lang.show-menu-arrow .dropdown-toggle .filter-option:after {
   margin-top: 1px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -5896,7 +5896,7 @@ a:hover, a:focus,
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 9px solid #c9d8e1; }
-.select-promo .filter-option-inner-inner {
+.select-promo--lang .filter-option-inner-inner {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -5906,18 +5906,18 @@ a:hover, a:focus,
   min-height: 28px;
   white-space: nowrap;
   color: #7a828c; }
-.select-promo .filter-option-inner-inner .icon {
+.select-promo--lang .filter-option-inner-inner .icon {
     margin-right: 5px; }
-.select-promo .dropdown-menu {
+.select-promo--lang .dropdown-menu {
   background-color: #c9d8e1;
   border: none;
   padding: 0; }
-.select-promo .dropdown-menu.show {
+.select-promo--lang .dropdown-menu.show {
     margin-top: 10px; }
-.select-promo .dropdown-menu .dropdown-item {
+.select-promo--lang .dropdown-menu .dropdown-item {
     padding: 4px 14px 4px 14px;
     background: transparent; }
-.select-promo .dropdown-menu .dropdown-item .text {
+.select-promo--lang .dropdown-menu .dropdown-item .text {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -5927,9 +5927,16 @@ a:hover, a:focus,
       font-size: 17px;
       color: #7a828c;
       line-height: normal; }
-.select-promo.show.show-menu-arrow .dropdown-toggle:after {
+.select-promo--lang.show.show-menu-arrow .dropdown-toggle:after {
   -webkit-transform: scaleY(-1);
           transform: scaleY(-1); }
+.select-promo--simple .btn {
+  margin-right: 0 !important;
+  padding: 0;
+  border: none; }
+.select-promo--simple > .dropdown-toggle:after {
+  width: 16px;
+  margin: 0 0 0 -1px; }
 .icon-location {
   fill: #ff961a; }
 .icon-location--mini {
@@ -5945,24 +5952,24 @@ a:hover, a:focus,
   height: 20px;
   fill: #ff961a; }
 .icon-lang-ru {
-  background-image: url(../img/sprite-0052009560055805926.png);
+  background-image: url(../img/sprite-08015006393699202.png);
   background-position: -124px -49px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-lang-en {
-  background-image: url(../img/sprite-0052009560055805926.png);
+  background-image: url(../img/sprite-08015006393699202.png);
   background-position: -124px -25px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-burger {
-  background-image: url(../img/sprite-0052009560055805926.png);
+  background-image: url(../img/sprite-08015006393699202.png);
   background-position: -29px -76px;
   width: 25px;
   height: 23px; }
 .icon-close {
-  background-image: url(../img/sprite-0052009560055805926.png);
+  background-image: url(../img/sprite-08015006393699202.png);
   background-position: -124px 0px;
   width: 21px;
   height: 21px; }
@@ -6045,14 +6052,14 @@ a:hover, a:focus,
 .menu-mobile .btn:after {
     display: none; }
 .menu-mobile .btn[aria-expanded="true"] .icon {
-    background-image: url(../img/sprite-0052009560055805926.png);
+    background-image: url(../img/sprite-08015006393699202.png);
     background-position: -83px -76px;
     width: 21px;
     height: 21px;
     margin-right: 14px; }
 .menu-mobile .icon {
   display: inline-block;
-  background-image: url(../img/sprite-0052009560055805926.png);
+  background-image: url(../img/sprite-08015006393699202.png);
   background-position: 0px -76px;
   width: 25px;
   height: 23px;
@@ -6533,7 +6540,7 @@ a:hover, a:focus,
 .service-item__expand:after {
       content: '';
       display: inline-block;
-      background-image: url(../img/sprite-0052009560055805926.png);
+      background-image: url(../img/sprite-08015006393699202.png);
       background-position: -76px -103px;
       width: 12px;
       height: 9px;
@@ -6829,6 +6836,24 @@ a:hover, a:focus,
     display: none; }
 .article-review__answer {
   margin-top: 6px; }
+.article-sales__nav a,
+.article-sales__nav .btn,
+.article-sales__nav .bootstrap-select {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4a545b;
+  margin-right: 42px;
+  font-weight: bold; }
+.article-sales__nav a:last-child,
+  .article-sales__nav .btn:last-child,
+  .article-sales__nav .bootstrap-select:last-child {
+    margin-right: 0; }
+.article-sales__nav a.active,
+  .article-sales__nav .btn.active,
+  .article-sales__nav .bootstrap-select.active {
+    color: #ff9200; }
+.article-sales__nav__block {
+  margin-bottom: 10px; }
 @media (min-width: 576px) {
     .container {
       max-width: 100%; }
@@ -8359,6 +8384,8 @@ a:hover, a:focus,
       margin-bottom: 36px; }
     .view-article--reviews .view-article__title {
       margin-bottom: 30px; }
+    .view-article--sales .view-article__title {
+      margin-bottom: 25px; }
       .article__title {
         padding-right: 100px; }
       .article__date {
@@ -8394,7 +8421,16 @@ a:hover, a:focus,
         .article-doctor__description__side p {
           margin-bottom: 65px !important; }
   .article-doctor__info {
-    padding-top: 35px; } }
+    padding-top: 35px; }
+  .article-sales__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .article-sales__nav__block {
+      margin-bottom: 33px; } }
 @media (min-width: 991px) {
     .container {
       max-width: 100%; }
@@ -9057,6 +9093,9 @@ a:hover, a:focus,
     .breadcrumb--reviews {
       margin-top: 55px;
       margin-bottom: 49px; }
+    .breadcrumb--sales {
+      margin-top: 58px;
+      margin-bottom: 33px; }
     .dropdown--service > .dropdown-menu {
       margin-top: auto;
       width: auto;
@@ -9108,6 +9147,10 @@ a:hover, a:focus,
       padding: 0; }
         .navbar-nav--menu .nav-link__icon {
           width: 53px; }
+    .article-quick--right .article-quick__content {
+      max-width: 50%;
+      margin: 0 auto;
+      margin-right: 0px; }
     .view-block__title {
       margin-bottom: 50px;
       padding: 0; }
@@ -9962,12 +10005,12 @@ a:hover, a:focus,
       padding-left: 0;
       height: 45px; }
       .menu-mobile .btn[aria-expanded="true"] .icon {
-        background-image: url(../img/sprite-0052009560055805926.png);
+        background-image: url(../img/sprite-08015006393699202.png);
         background-position: -124px 0px;
         width: 21px;
         height: 21px; }
     .menu-mobile .icon {
-      background-image: url(../img/sprite-0052009560055805926.png);
+      background-image: url(../img/sprite-08015006393699202.png);
       background-position: -29px -76px;
       width: 25px;
       height: 23px;
@@ -10123,7 +10166,7 @@ a:hover, a:focus,
     .dropdown--service > .dropdown-toggle:after {
       content: "";
       display: inline-block;
-      background-image: url(../img/sprite-0052009560055805926.png);
+      background-image: url(../img/sprite-08015006393699202.png);
       background-position: -92px -103px;
       width: 12px;
       height: 9px;
