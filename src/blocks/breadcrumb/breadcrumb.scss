@@ -118,4 +118,11 @@
       margin-bottom: 26px;
     }
   }
+
+  &--service-article {
+    @include media-breakpoint-up(lg) {
+      margin-top: 45px;
+      margin-bottom: 37px;
+    }
+  }
 }

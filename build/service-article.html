@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Услуги</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link href="css/style.min.css?1" rel="stylesheet" media="screen" />
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(
+        'no-js',
+        'js'
+      );
+      var ua = window.navigator.userAgent.toLowerCase(),
+        isIE = /trident/gi.test(ua) || /msie/gi.test(ua);
+      if (isIE) document.documentElement.classList.add('ie');
+    </script>
+
+  </head>
+  <body>
+    <div class="page__inner">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <nav class="navbar navbar--header">
+            <div class="page-header__info">
+              <div class="container d-flex justify-content-between">
+                <ul class="page-header__info__list">
+                  <li>
+                    <svg class="icon icon-location icon-location--mini">
+                      <use xlink:href="img/sprite-svg.svg#location"></use>
+                    </svg>
+
+                    <span>г. Курск, ул. Карла Маркса, 49</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon-clock icon-clock--mini">
+                      <use xlink:href="img/sprite-svg.svg#clock"></use>
+                    </svg>
+
+                    <span>пн-пт: с 9:00 до 18:00</span>
+                  </li>
+                  <li>
+                    <div class="page-header__call">
+                      <a href="tel:74712238223" class="page-header__call__phone">
+                        <svg class="icon icon-phone icon-phone--mini">
+                          <use xlink:href="img/sprite-svg.svg#phone"></use>
+                        </svg>
+                        7 (4712) 23-82-23
+                      </a>
+                      <a href="#" class="page-header__call__text">
+                        Заказать звонок
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <select
+                      class="select-promo select-promo--lang show-menu-arrow"
+                      data-width="fit"
+                    >
+                      <option data-content="<span class='icon icon-lang-ru'></span> Ru"></option>
+                      <option data-content="<span class='icon icon-lang-en'></span> En"></option>
+                    </select>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="page-header__main__wrapper">
+              <div class="container">
+                <div class="page-header__main">
+                  <a href="#" class="page-header__logo">
+
+                    <div class="logo logo--main"></div>
+
+                  </a>
+
+                  <div class="page-header__nav-quick">
+                    <ul class="nav-quick nav-quick--header">
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <img src="img/tooth-heal.png" class="icon" alt="" />
+                          </div>
+                          <div class="nav-quick__text">Лечение зубов</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <img src="img/tooth-brace.png" class="icon" alt="" />
+                          </div>
+                          <div class="nav-quick__text">Брекеты</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <img src="img/tooth-search.png" class="icon" alt="" />
+                          </div>
+                          <div class="nav-quick__text">Ортодонтия</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <img src="img/tooth-protes.png" class="icon" alt="" />
+                          </div>
+                          <div class="nav-quick__text">Протезирование</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="nav-quick__icon">
+                            <img src="img/tooth-smile.png" class="icon" alt="" />
+                          </div>
+                          <div class="nav-quick__text">
+                            детская стоматология
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-header__nav__wrapper">
+              <div class="container">
+                <div class="page-header__nav page-header__nav--header">
+                  <div class="dropdown menu-mobile">
+                    <button
+                      class="btn btn-light navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      id="menu-mobile"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="icon"></span>
+                      Услуги
+                    </button>
+                  </div>
+
+
+                  <div class="dropdown dropdown--service">
+                    <a 
+                      class="btn dropdown-toggle" 
+                      id="dropdown-service"
+                      data-toggle="collapse" 
+                      href="#collapseExample" 
+                      role="button" 
+                      aria-expanded="false" 
+                      aria-controls="collapseExample"
+                    >
+                      Меню
+                    </a>
+                    <div class="collapse droppping-menu" id="collapseExample">
+                      <ul class="navbar navbar--menu">
+                        <li class="dropdown-submenu">
+                          <a
+                            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="btn btn-light dropdown-submenu__link"
+                          >
+                            О клинике
+                          </a>
+                          <div class="dropdown-menu dropdown-menu--droppping" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#" tabindex="-1">Вакансии</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Лицензии</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Оборудование</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Галерея</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Расписание</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Отзывы</a>
+                            <a class="dropdown-item" href="#" tabindex="-1">Статьи</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Цены</a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Доктора</a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Акции</a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-light">Контакты</a>
+                        </li>
+                        <li class="d-xl-none">
+                          <a href="#" class="btn btn-primary page-header__nav__order">Запись на прием</a>
+
+                          <div class="page-header__info page-header__info--mobile">
+                            <ul class="page-header__info__list">
+                              <li>
+                                <svg class="icon icon-location icon-location--mini">
+                                  <use xlink:href="img/sprite-svg.svg#location"></use>
+                                </svg>
+
+                                <span>г. Курск, ул. Карла Маркса, 49</span>
+                              </li>
+                              <li>
+                                <svg class="icon icon-clock icon-clock--mini">
+                                  <use xlink:href="img/sprite-svg.svg#clock"></use>
+                                </svg>
+
+                                <span>пн-пт: с 9:00 до 18:00</span>
+                              </li>
+                              <li>
+                                <div class="page-header__call page-header__call--mobile">
+                                  <a href="#" class="page-header__call__text">
+                                    Заказать звонок
+                                  </a>
+                                  <select
+                                    class="select-promo select-promo--lang show-menu-arrow"
+                                    data-width="fit"
+                                  >
+                                    <option data-content="<span class='icon icon-lang-ru'></span> Ru"></option>
+                                    <option data-content="<span class='icon icon-lang-en'></span> En"></option>
+                                  </select>
+
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <a href="#" class="btn btn-primary page-header__nav__order d-none d-xl-flex align-items-center">Запись на прием</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-header__phone">
+              <a href="tel:+74712238223">
+                <svg class="icon icon-phone icon-phone--mini">
+                  <use xlink:href="img/sprite-svg.svg#phone"></use>
+                </svg>
+        
+                7 (4712) 23-82-23
+              </a>
+            </div>
+          </nav>
+          <div
+            class="collapse navbar-collapse navbar-collapse--mobile"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <ul class="navbar-nav navbar-nav--menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--cleaning">
+                        <use xlink:href="img/sprite-svg.svg#tooth-cleaning"></use>
+                      </svg>
+                    </div>
+
+                    Гигиена полости рта
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--bright">
+                        <use xlink:href="img/sprite-svg.svg#tooth-bright"></use>
+                      </svg>
+                    </div>
+
+                    Отбеливание зубов
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--simple2">
+                        <use xlink:href="img/sprite-svg.svg#tooth-simple2"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--braces" height="28px">
+                        <use xlink:href="img/sprite-svg.svg#tooth-braces"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--implement">
+                        <use xlink:href="img/sprite-svg.svg#tooth-implement"></use>
+                      </svg>
+                    </div>
+
+                    Гигиена полости рта
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--screw2">
+                        <use xlink:href="img/sprite-svg.svg#tooth-screw2"></use>
+                      </svg>
+                    </div>
+
+                    Отбеливание зубов
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--search">
+                        <use xlink:href="img/sprite-svg.svg#tooth-search"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--pulling">
+                        <use xlink:href="img/sprite-svg.svg#tooth-pulling"></use>
+                      </svg>
+                    </div>
+
+                    Детская стоматология
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-link__icon">
+                      <svg class="icon icon--screw2">
+                        <use xlink:href="img/sprite-svg.svg#tooth-screw2"></use>
+                      </svg>
+                    </div>
+
+                    Протезирование зубов
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </header>
+
+      <div class="page__content">
+        <main class="page__main-content" role="main">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb--service-article">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#">Услуги</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Лечение дёсен
+                </li>
+              </ol>
+            </nav>
+
+            <div class="view-article view-article--service-article">
+              <div class="view-article__content">
+                <div class="service-article row">
+                  <div class="service-article__content col-12 col-lg-7">
+                    <div class="h2 view-article__title">
+                      Лечение дёсен
+                    </div>
+
+                    <ul class="service-article__tag">
+                      <li>
+                        <a href="#" class="btn btn-taboo">
+                          Лечение гингевита
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-taboo">
+                          Лечение пародонтита
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-taboo">
+                          Лечение стамотита
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-taboo">
+                          Лечение пародонтоза
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div class="h3 service-article__title">Воспаление дёсен и лечение</div>
+
+                    <p>
+                      Воспаление дёсен — довольно распространённое заболевание,
+                      встречающееся и у взрослых, и у детей. Сегодня многие
+                      жалуются на повышенную чувствительность и кровоточивость
+                      дёсен. Когда дёсны воспаляются и кровоточат, то настроение
+                      падает «ниже плинтуса».
+                    </p>
+                    <p>
+                      И есть из-за чего. Мало того, что улыбка при воспалённых
+                      дёснах выглядит, мягко говоря, непривлекательно. Так, ещё
+                      и болезненные ощущения, и запах изо рта. И зубная боль
+                      может случиться. С чего уж тут хорошему настроению быть? А
+                      как подумаешь, что воспаление дёсен может привести к
+                      потере зубов, так и совсем тоска одолевает.
+                    </p>
+                    <p class="color-bright">
+                      <strong>
+                        Визит к врачу откладывать не стоит. Если игнорировать
+                        проблему, возможны неприятные последствия:</strong
+                      >
+                    </p>
+
+                    <img
+                      src="img/service-article-img1.jpg"
+                      class="img"
+                      alt=""
+                    />
+
+                    <p class="color-bright">
+                      <strong>
+                        Показания к стоматологическим процедурам под общим
+                        наркозом:
+                      </strong>
+                    </p>
+
+                    <ul class="list-main">
+                      <li>
+                        наличие у пациента неврологических заболеваний;
+                      </li>
+                      <li>
+                        усиленный рвотный рефлекс;
+                      </li>
+                      <li>
+                        аллергия на препараты для местного обезболивания;
+                      </li>
+                      <li>
+                        панический ужас, с которым люди не могут справиться
+                        усилием воли.
+                      </li>
+                    </ul>
+
+                    <p>
+                      Общий наркоз не проводится при наркотическом или
+                      алкогольном опьянении пациента.
+                    </p>
+                  </div>
+
+                  <div class="service-article__side col-12 col-lg-5">
+                    <div class="service-article__side__block">
+                      <div class="card-info">
+                        <div class="h3 text-uppercase">Записаться на прием</div>
+                        <p>
+                          Вы можете записаться удобным для Вас способом: по
+                          <a href="#">телефону</a> или
+                          <a href="#">оставив заявку</a>
+                        </p>
+
+                        <a
+                          href="tel:74712238223"
+                          class="page-header__call__phone"
+                        >
+                          <svg class="icon icon-phone icon-phone--mini">
+                            <use xlink:href="img/sprite-svg.svg#phone"></use>
+                          </svg>
+                          <strong>7 (4712) 23-82-23</strong>
+                        </a>
+
+                        <a href="#" class="btn btn-primary">Запись на прием</a>
+                      </div>
+                    </div>
+
+                    <div class="service-article__side__block">
+                      <div class="h3 service-article__title">Цены на лечение</div>
+
+                      <table class="table table-striped">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <strong>Лечение гингевита</strong>
+                            </td>
+                            <td>
+                              <div class="text-price">от 3000 руб.</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Лечение гингевита</strong>
+                            </td>
+                            <td>
+                              <div class="text-price">от 3000 руб.</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Лечение гингевита</strong>
+                            </td>
+                            <td>
+                              <div class="text-price">от 3000 руб.</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Лечение гингевита</strong>
+                            </td>
+                            <td>
+                              <div class="text-price">от 3000 руб.</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <a href="#" class="btn btn-outline-primary service-article__all-proce">
+                        прайс на услуги
+                      </a>
+                    </div>
+
+                    <div class="service-article__side__block">
+                      <div class="h3 service-article__title">Специалисты</div>
+
+                      <div class="scroll-doctors">
+                        <div class="scroll-doctors__content">
+                          <div class="profile-card__wrapper" id="slider-specialist">
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img1.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                                <div class="profile-card__position">главный врач</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img2.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Могилевский Александр Игоревич</a>
+                                <div class="profile-card__position">врач стоматолог-хирург</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img3.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Киржа Ольга Владимировна</a>
+                                <div class="profile-card__position">врач стоматолог-терапевт</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img4.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Данилова Евгения Сергеевна</a>
+                                <div class="profile-card__position">врач стоматолог-хирург</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img5.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Харламова Ольга Сергеевна</a>
+                                <div class="profile-card__position">врач-стоматолог-ортодонт</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img1.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Сайфудинова Тамара Михайловна</a>
+                                <div class="profile-card__position">главный врач</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img2.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Могилевский Александр Игоревич</a>
+                                <div class="profile-card__position">врач стоматолог-хирург</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img3.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Киржа Ольга Владимировна</a>
+                                <div class="profile-card__position">врач стоматолог-терапевт</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img4.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Данилова Евгения Сергеевна</a>
+                                <div class="profile-card__position">врач стоматолог-хирург</div>
+                              </div>
+                            </div>
+
+                            <div class="profile-card">
+                              <a href="#" class="profile-card__img" style="background-image: url(img/doctor-profile-img5.png)"></a>
+                              <div class="profile-card__description">
+                                <a href="#" class="profile-card__title">Харламова Ольга Сергеевна</a>
+                                <div class="profile-card__position">врач-стоматолог-ортодонт</div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="view-block view-block--review">
+                  <div class="container">
+                    <div class="h2 view-block__title">отзывы</div>
+                  </div>
+                
+                  <div class="view-block__content">
+                    <div class="slider-review__wrapper">
+                      <div class="container">
+                        <div class="slider slider-review">
+                          <div>
+                            <div class="review-card">
+                              <div class="review-card__item__description">
+                                <div class="review-card__rate">
+                                  <div class="review-card__icon">+2.0</div>
+                                  Отлично
+                                </div>
+
+                                <div class="review-card__date">11.05.2019</div>
+
+                                <div class="review-card__title">
+                                  Лучшая стомотология!
+                                </div>
+
+                                <p>От души рекомендую эту стоматологию! Очень уютно, чисто, всё продумано до мелочей! Милейшие администраторы и грамотные врачи! Теперь жду кариес, чтобы снова к ним попасть.</p>
+
+                                <p>Удаляют зубы не больно абсолютно - через 3 дня уже всё зажило! Чистка прошла успешнее, чем ожидалось - как после отбеливания, сплю в их каппе каждую ночь - чувствую, как скрежет зубов потихоньку уходит из нашей спальни.</p>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div>
+                            <div class="review-card">
+                              <div class="review-card__item__description">
+                                <div class="review-card__rate">
+                                  <div class="review-card__icon">+2.0</div>
+                                  Отлично
+                                </div>
+
+                                <div class="review-card__date">11.05.2019</div>
+
+                                <div class="review-card__title">
+                                  Выбираю только Стомтек!
+                                </div>
+
+                                <p>Раньше я ходила в другую клинику, но с точки зрения удобства расположения она была далеко от дома. Я ознакомилась с клиниками по интернету и записалась в "Стомтек". Эта клиника ничуть не хуже чем та, в которой я была. Здесь чисто. Администраторы уважительно и внимательно обращаются с посетителями. Когда мы с мужем пришли, нам предложили</p>
+
+                                <p>Здесь есть шкаф для одежды. Нам предложили чай и кофе. Я была у доктора Даниловой Мне удаляли два зуба. Понравилось все и я еще собираюсь сделать протезирование. На консультации доктор полностью проконсультировал по поводу протезирования и подсчитал сумму. Буду обращаться.</p>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div>
+                            <div class="review-card">
+                              <div class="review-card__item__description">
+                                <div class="review-card__rate">
+                                  <div class="review-card__icon">+2.0</div>
+                                  Отлично
+                                </div>
+
+                                <div class="review-card__date">11.05.2019</div>
+
+                                <div class="review-card__title">
+                                  Лучшая стомотология!
+                                </div>
+
+                                <p>От души рекомендую эту стоматологию! Очень уютно, чисто, всё продумано до мелочей! Милейшие администраторы и грамотные врачи! Теперь жду кариес, чтобы снова к ним попасть.</p>
+
+                                <p>Удаляют зубы не больно абсолютно - через 3 дня уже всё зажило! Чистка прошла успешнее, чем ожидалось - как после отбеливания, сплю в их каппе каждую ночь - чувствую, как скрежет зубов потихоньку уходит из нашей спальни.</p>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div>
+                            <div class="review-card">
+                              <div class="review-card__item__description">
+                                <div class="review-card__rate">
+                                  <div class="review-card__icon">+2.0</div>
+                                  Отлично
+                                </div>
+
+                                <div class="review-card__date">11.05.2019</div>
+
+                                <div class="review-card__title">
+                                  Выбираю только Стомтек!
+                                </div>
+
+                                <p>Раньше я ходила в другую клинику, но с точки зрения удобства расположения она была далеко от дома. Я ознакомилась с клиниками по интернету и записалась в "Стомтек". Эта клиника ничуть не хуже чем та, в которой я была. Здесь чисто. Администраторы уважительно и внимательно обращаются с посетителями. Когда мы с мужем пришли, нам предложили раздеться.</p>
+
+                                <p>Здесь есть шкаф для одежды. Нам предложили чай и кофе. Я была у доктора Даниловой Мне удаляли два зуба. Понравилось все и я еще собираюсь сделать протезирование. На консультации доктор полностью проконсультировал по поводу протезирования и подсчитал сумму. Буду обращаться.</p>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                
+                  <div class="view-block__btn">
+                    <a href="#" class="btn btn-primary">оставить отзыв</a>
+                  </div>
+                </div>
+
+                <div class="article-item__block article-item__block--service-article">
+                  <div class="h2 text-uppercase text-center article-item__block__title">
+                    Ещё услуги
+                  </div>
+                
+                  <div class="row article-item__wrapper">
+                    <div class="col-12 col-md-4">
+                      <div class="article-item">
+                        <div class="article-item__img">
+                          <img src="img/article-img1.png" alt="" class="img" />
+                        </div>
+                        <div class="article-item__description">
+                          <div class="article-item__title h3">
+                            Отбеливание зубов
+                          </div>
+                          <div class="article-item__text">
+                            Восстановление зубов на подвижной нижней челюсти
+                            имеет ряд особенностей. При надкусывании,
+                            пережевывании пищи нагрузка на челюсть составляет
+                            около 35–40 кг....
+                          </div>
+                          <div class="article-item__price">От 1000 руб.</div>
+                        </div>
+                
+                        <div class="article-item__popup">
+                          <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="article-item">
+                        <div class="article-item__img">
+                          <img src="img/article-img2.png" alt="" class="img" />
+                        </div>
+                        <div class="article-item__description">
+                          <div class="article-item__title h3">
+                            Отбеливание зубов
+                          </div>
+                          <div class="article-item__text">
+                            Восстановление зубов на подвижной нижней челюсти
+                            имеет ряд особенностей. При надкусывании,
+                            пережевывании пищи нагрузка на челюсть составляет
+                            около 35–40 кг....
+                          </div>
+                          <div class="article-item__price">От 1000 руб.</div>
+                        </div>
+                
+                        <div class="article-item__popup">
+                          <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="article-item">
+                        <div class="article-item__img">
+                          <img src="img/article-img3.png" alt="" class="img" />
+                        </div>
+                        <div class="article-item__description">
+                          <div class="article-item__title h3">
+                            Отбеливание зубов
+                          </div>
+                          <div class="article-item__text">
+                            Восстановление зубов на подвижной нижней челюсти
+                            имеет ряд особенностей. При надкусывании,
+                            пережевывании пищи нагрузка на челюсть составляет
+                            около 35–40 кг....
+                          </div>
+                          <div class="article-item__price">От 1000 руб.</div>
+                        </div>
+                
+                        <div class="article-item__popup">
+                          <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="page__footer-wrapper">
+        <footer class="page-footer page-footer--simple" role="contentinfo">
+          <div class="page-footer__inner">
+            <div class="page-footer__main">
+              <div class="container">
+                <div class="page-header__nav page-header__nav--footer">
+                  <a href="#" class="page-header__logo page-header__logo--footer">
+                    <div class="logo logo--main"></div>
+                  </a>
+                  <ul class="navbar navbar--menu navbar--footer">
+                    <li>
+                      <a href="#" class="btn btn-light">Услуги</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">О клинике</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Цены</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Доктора</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Акции</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-light">Контакты</a>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="btn btn-primary">Запись на прием</a>
+                </div>
+
+                <div class="page-footer__info">
+                  <div class="page-footer__info__location">
+                    <a href="#">
+                      <svg class="icon icon-location icon-location--mini">
+                        <use xlink:href="img/sprite-svg.svg#location"></use>
+                      </svg>
+
+                      г. Курск, ул. Карла Маркса, 49
+                    </a>
+                  </div>
+                  <div class="page-footer__info__phone">
+                    <a href="#">
+                      <svg class="icon icon-phone">
+                        <use xlink:href="img/sprite-svg.svg#phone"></use>
+                      </svg>
+
+                      7 (4712) 23-82-23
+                    </a>
+                  </div>
+                  <div class="page-footer__info__vk">
+                    <a href="#">
+                      <img src="img/icon-vk.png" class="icon icon-vk" alt="" />
+
+                      Мы Вконтакте
+                    </a>
+                  </div>
+                  <div class="page-footer__info__inst">
+                    <a href="#">
+                      <img
+                        src="img/icon-instagram.png"
+                        class="icon icon-instagram"
+                        alt=""
+                      />
+
+                      Мы в Инстаграм
+                    </a>
+                  </div>
+                  <div class="page-footer__info__copyright">
+                    <a href="#" class="page-footer__copyright">
+                      Разработка сайта:
+                      <img
+                        src="img/made-by.png"
+                        class="page-footer__info__made"
+                        width="163px"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-footer__footer">
+              <div class="container">
+                <p>© Стоматологическая клиника «СТОМТЕК», 2019 I ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+    <script src="js/script.min.js?1"></script>
+
+  </body>
+</html>

@@ -93,4 +93,17 @@
       }
     }
   }
+
+  &--service-article {
+    @include media-breakpoint-up(md) {
+    }
+
+    #{$block-name} {
+      &__title {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
 }

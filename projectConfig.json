@@ -46,7 +46,9 @@
     "contact-form": [],
     "form": [],
     "gallery": [],
-    "price-tab": []
+    "price-tab": [],
+    "service-article": [],
+    "card-info": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -33,4 +33,12 @@
       }
     }
   }
+
+  &__block {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      // margin-bottom: 42px;
+    }
+  }
 }

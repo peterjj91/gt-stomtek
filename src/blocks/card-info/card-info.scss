@@ -1,0 +1,37 @@
+.card-info {
+  $block-name: &; // #{$block-name}__element {}
+  background-color: #edf2f5;
+  border: 7px solid white;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  padding: 32px 15px 20px 15px;
+  text-align: center;
+
+  .h3 {
+    margin-bottom: 19px;
+  }
+
+  p {
+    font-family: $font-arial;
+    font-size: 17px;
+    line-height: 23px;
+    color: #515151;
+    font-weight: bold;
+    margin-bottom: 4px;
+
+    a {
+      color: #ff9110;
+    }
+  }
+
+  .page-header__call__phone {
+    justify-content: center;
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+
+  .btn {
+    margin-top: 5px;
+  }
+}

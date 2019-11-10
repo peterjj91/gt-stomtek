@@ -28,6 +28,20 @@
       td {
       }
     }
+
+    & + tbody {
+      tr {
+        &:first-child {
+          td {
+            padding-top: 14px;
+            padding-bottom: 7px;
+          }
+        }
+
+        td {
+        }
+      }
+    }
   }
 
   tbody {
@@ -38,13 +52,6 @@
 
       &:nth-of-type(odd) {
         background-color: #edf2f5;
-      }
-
-      &:first-child {
-        td {
-          padding-top: 14px;
-          padding-bottom: 7px;
-        }
       }
 
       td {
