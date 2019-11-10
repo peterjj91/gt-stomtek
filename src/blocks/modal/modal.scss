@@ -4,4 +4,28 @@
 
 .modal {
   $block-name: &; // #{$block-name}__element {}
+
+  &-dialog {
+    max-width: 460px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 460px;
+    }
+  }
+
+  &-content {
+    border: none;
+  }
+
+  &-body {
+    padding: 0;
+  }
+
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px 12px;
+    outline: none;
+  }
 }
