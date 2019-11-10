@@ -4887,7 +4887,7 @@ body {
           -ms-flex-pack: center;
               justify-content: center; }
 .page__footer-wrapper {
-    z-index: 1;
+    z-index: 2;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     background-size: cover;
@@ -5038,7 +5038,7 @@ a:hover, a:focus,
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2); }
 .dropdown-toggle:after {
-  background-image: url(../img/sprite-08017384916596335.png);
+  background-image: url(../img/sprite-06426872252892444.png);
   background-position: -76px -103px;
   width: 12px;
   height: 9px;
@@ -5193,13 +5193,21 @@ a:hover, a:focus,
       width: 24px;
       height: 24px;
       margin-right: 5px; }
-.page-footer--simple {
-  -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.2);
-  padding-top: 11px; }
+.page-footer--simple .page-footer__main {
+  padding-top: 9px; }
 .page-footer__main {
+  position: relative;
   padding-top: 16px;
   padding-bottom: 4px; }
+.page-footer__main:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px -22px 21px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px -22px 21px 0px rgba(0, 0, 0, 0.2);
+    height: 21px; }
 .page-footer__info {
   padding: 0;
   padding-top: 13px;
@@ -5316,7 +5324,7 @@ a:hover, a:focus,
 .dropdown-submenu__link:after {
     content: "";
     display: inline-block;
-    background-image: url(../img/sprite-08017384916596335.png);
+    background-image: url(../img/sprite-06426872252892444.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5904,7 +5912,7 @@ a:hover, a:focus,
   min-width: 80px;
   font-size: 16px; }
 .select-promo--lang > .dropdown-toggle:after {
-    background-image: url(../img/sprite-08017384916596335.png);
+    background-image: url(../img/sprite-06426872252892444.png);
     background-position: -76px -103px;
     width: 12px;
     height: 9px;
@@ -5978,24 +5986,24 @@ a:hover, a:focus,
   height: 20px;
   fill: #ff961a; }
 .icon-lang-ru {
-  background-image: url(../img/sprite-08017384916596335.png);
+  background-image: url(../img/sprite-06426872252892444.png);
   background-position: -124px -49px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-lang-en {
-  background-image: url(../img/sprite-08017384916596335.png);
+  background-image: url(../img/sprite-06426872252892444.png);
   background-position: -124px -25px;
   width: 20px;
   height: 20px;
   display: inline-block; }
 .icon-burger {
-  background-image: url(../img/sprite-08017384916596335.png);
+  background-image: url(../img/sprite-06426872252892444.png);
   background-position: -29px -76px;
   width: 25px;
   height: 23px; }
 .icon-close {
-  background-image: url(../img/sprite-08017384916596335.png);
+  background-image: url(../img/sprite-06426872252892444.png);
   background-position: -124px 0px;
   width: 21px;
   height: 21px; }
@@ -6078,14 +6086,14 @@ a:hover, a:focus,
 .menu-mobile .btn:after {
     display: none; }
 .menu-mobile .btn[aria-expanded="true"] .icon {
-    background-image: url(../img/sprite-08017384916596335.png);
+    background-image: url(../img/sprite-06426872252892444.png);
     background-position: -83px -76px;
     width: 21px;
     height: 21px;
     margin-right: 14px; }
 .menu-mobile .icon {
   display: inline-block;
-  background-image: url(../img/sprite-08017384916596335.png);
+  background-image: url(../img/sprite-06426872252892444.png);
   background-position: 0px -76px;
   width: 25px;
   height: 23px;
@@ -6575,7 +6583,7 @@ a:hover, a:focus,
 .service-item__expand:after {
       content: '';
       display: inline-block;
-      background-image: url(../img/sprite-08017384916596335.png);
+      background-image: url(../img/sprite-06426872252892444.png);
       background-position: -76px -103px;
       width: 12px;
       height: 9px;
@@ -7034,7 +7042,7 @@ textarea.form-control {
       position: absolute;
       left: -19px;
       top: 7px;
-      background-image: url(../img/sprite-08017384916596335.png);
+      background-image: url(../img/sprite-06426872252892444.png);
       background-position: -76px -103px;
       width: 12px;
       height: 9px; }
@@ -7160,6 +7168,64 @@ textarea.form-control {
       margin-right: 10px; }
 .card-info .btn {
     margin-top: 5px; }
+.error-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 530px; }
+.error-page .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+.error-page__content {
+    margin: 0 auto;
+    margin-top: -40px;
+    max-width: 415px;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px; }
+.error-page__title {
+    font-family: "PT Serif", serif;
+    font-size: 120px;
+    line-height: 120px;
+    margin-bottom: 13px;
+    color: #fec07a; }
+.error-page__img {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: -89px;
+    width: 565px;
+    height: 413px;
+    background-position: bottom left;
+    cursor: pointer;
+    z-index: -1; }
+.error-page p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0; }
+.error-page__btns {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    margin-top: 30px; }
+.error-page__btns li {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px; }
+.error-page__btns .btn {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      white-space: nowrap; }
 @media (min-width: 576px) {
     .container {
       max-width: 100%; }
@@ -7962,12 +8028,13 @@ textarea.form-control {
       .page-header__nav--header {
         margin: 0; }
     .page-header__nav--footer {
-      margin-top: 9px;
       -webkit-box-align: center !important;
           -ms-flex-align: center !important;
               align-items: center !important; }
       .page-header__phone {
         display: none; }
+    .page-footer__main {
+      padding-top: 9px; }
     .navbar--header {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
@@ -7995,7 +8062,16 @@ textarea.form-control {
           -ms-flex-align: end;
               align-items: end; }
       .gallery__list li {
-        margin-right: 20px; } }
+        margin-right: 20px; }
+      .error-page__title {
+        font-size: 188px;
+        line-height: 160px; }
+      .error-page__btns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .error-page__btns li {
+          margin-bottom: 0; } }
 @media (min-width: 768px) {
     .container {
       max-width: 100%; }
@@ -8779,7 +8855,9 @@ textarea.form-control {
     .contact-form {
       padding: 27px 36px 22px 36px; }
     .price-tab__side {
-      padding-top: 54px; } }
+      padding-top: 54px; }
+      .error-page__img {
+        display: block; } }
 @media (min-width: 991px) {
     .container {
       max-width: 100%; }
@@ -9419,7 +9497,6 @@ textarea.form-control {
       .page-header__nav-quick {
         display: inline-block; }
     .page-footer__main {
-      padding-top: 0;
       padding-bottom: 20px; }
     .breadcrumb {
       margin-top: 58px;
@@ -10377,12 +10454,12 @@ textarea.form-control {
       padding-left: 0;
       height: 45px; }
       .menu-mobile .btn[aria-expanded="true"] .icon {
-        background-image: url(../img/sprite-08017384916596335.png);
+        background-image: url(../img/sprite-06426872252892444.png);
         background-position: -124px 0px;
         width: 21px;
         height: 21px; }
     .menu-mobile .icon {
-      background-image: url(../img/sprite-08017384916596335.png);
+      background-image: url(../img/sprite-06426872252892444.png);
       background-position: -29px -76px;
       width: 25px;
       height: 23px;
@@ -10553,7 +10630,7 @@ textarea.form-control {
     .dropdown--service > .dropdown-toggle:after {
       content: "";
       display: inline-block;
-      background-image: url(../img/sprite-08017384916596335.png);
+      background-image: url(../img/sprite-06426872252892444.png);
       background-position: -92px -103px;
       width: 12px;
       height: 9px;

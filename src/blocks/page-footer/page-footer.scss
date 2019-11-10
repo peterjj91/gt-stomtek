@@ -13,8 +13,12 @@
   }
 
   &--simple {
-    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.2);
-    padding-top: 11px;
+    // box-shadow: 0px 0px 21px &0px rgba(0, 0, 0, 0.2);
+    #{$block-name} {
+      &__main {
+        padding-top: 9px;
+      }
+    }
   }
 
   &__inner {
@@ -34,12 +38,25 @@
   }
 
   &__main {
+    position: relative;
     padding-top: 16px;
     padding-bottom: 4px;
 
+    @include media-breakpoint-up(sm) {
+      padding-top: 9px;
+    }
     @include media-breakpoint-up(lg) {
-      padding-top: 0;
       padding-bottom: 20px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0px -22px 21px 0px rgba(0, 0, 0, 0.2);
+      height: 21px;
     }
   }
 

@@ -48,7 +48,8 @@
     "gallery": [],
     "price-tab": [],
     "service-article": [],
-    "card-info": []
+    "card-info": [],
+    "error-page": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
