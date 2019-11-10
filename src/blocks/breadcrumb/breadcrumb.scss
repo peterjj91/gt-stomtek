@@ -98,4 +98,11 @@
       margin-bottom: 33px;
     }
   }
+
+  &--contacts {
+    @include media-breakpoint-up(lg) {
+      margin-top: 58px;
+      margin-bottom: 23px;
+    }
+  }
 }

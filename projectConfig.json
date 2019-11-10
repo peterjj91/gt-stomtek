@@ -42,7 +42,9 @@
     "article-review": [],
     "article-sales": [],
     "table": [],
-    "pay-promo": []
+    "pay-promo": [],
+    "contact-form": [],
+    "form": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

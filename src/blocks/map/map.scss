@@ -1,8 +1,8 @@
-
 .map {
   $block-name: &; // #{$block-name}__element {}
   width: 100%;
   height: 240px;
+  position: relative;
 
   @include media-breakpoint-up(lg) {
     height: 502px;
@@ -11,5 +11,57 @@
   &__frame {
     height: 100%;
     border: none;
+  }
+
+  .container {
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+      height: 0;
+    }
+  }
+
+  &__content {
+    display: inline-block;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    @include media-breakpoint-up(sm) {
+      margin-top: 65px;
+      width: 460px;
+      margin-left: -4px;
+    }
+
+    &__wrapper {
+      position: relative;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      @include media-breakpoint-up(sm) {
+        height: 0;
+      }
+    }
+  }
+
+  &--contacts {
+    height: auto;
+
+    @include media-breakpoint-up(sm) {
+      height: 643px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 643px;
+    }
+
+    #{$block-name} {
+      &__frame {
+        @include media-breakpoint-down(xs) {
+          height: 240px;
+        }
+      }
+    }
   }
 }

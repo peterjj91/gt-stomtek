@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Контакты</title>
+    <meta name="description" content="" />
+    @@include('_include/page_head.html')
+  </head>
+  <body>
+    <div class="page__inner">
+      <header class="page-header" role="banner">
+        @@include('blocks/page-header/page-header.html')
+      </header>
+
+      <div class="page__content">
+        <main class="page__main-content" role="main">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb--contacts">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Контакты
+                </li>
+              </ol>
+            </nav>
+
+            <div class="view-article view-article--contacts">
+              <div class="container">
+                <div class="h2 view-article__title text-center">
+                  Контакты
+                </div>
+              </div>
+
+              <div class="view-article__content">
+                <div class="view-block__content">
+                  <div class="row">
+                    <div class="col-12 col-lg-4">
+                      <div class="address-promo address-promo--contacts">
+                        <div class="address-promo__title">Телефон:</div>
+                        <div class="address-promo__info">
+                          <svg class="icon icon-phone icon-phone--mini">
+                            <use xlink:href="img/sprite-svg.svg#phone"></use>
+                          </svg>
+                          7 (4712) 23-82-23
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="address-promo address-promo--contacts">
+                        <div class="address-promo__title">Адрес:</div>
+                        <div class="address-promo__info">
+                          <svg class="icon icon-phone icon-phone--mini">
+                            <use xlink:href="img/sprite-svg.svg#location"></use>
+                          </svg>
+                          г. Курск, ул. Карла Маркса, 49
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="address-promo address-promo--contacts">
+                        <div class="address-promo__title">Режим работы:</div>
+                        <div class="address-promo__info">
+                          <svg class="icon icon-phone icon-phone--mini">
+                            <use xlink:href="img/sprite-svg.svg#clock"></use>
+                          </svg>
+                          пн-пт: с 9:00 до 18:00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="page__footer-wrapper">
+        @@include('blocks/page-footer/page-footer--contacts.html')
+      </div>
+    </div>
+
+    @@include('_include/page_bottom.html')
+  </body>
+</html>

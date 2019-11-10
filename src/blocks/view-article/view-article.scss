@@ -66,4 +66,18 @@
       }
     }
   }
+
+  &--contacts {
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+    }
+
+    #{$block-name} {
+      &__title {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
 }
