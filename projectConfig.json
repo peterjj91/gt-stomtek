@@ -45,7 +45,8 @@
     "pay-promo": [],
     "contact-form": [],
     "form": [],
-    "gallery": []
+    "gallery": [],
+    "price-tab": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -112,4 +112,10 @@
       margin-bottom: 36px;
     }
   }
+
+  &--prices {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 26px;
+    }
+  }
 }
