@@ -105,4 +105,11 @@
       margin-bottom: 23px;
     }
   }
+
+  &--gallery {
+    @include media-breakpoint-up(lg) {
+      margin-top: 38px;
+      margin-bottom: 36px;
+    }
+  }
 }

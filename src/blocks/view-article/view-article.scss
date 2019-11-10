@@ -80,4 +80,17 @@
       }
     }
   }
+
+  &--gallery {
+    @include media-breakpoint-up(md) {
+    }
+
+    #{$block-name} {
+      &__title {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 38px;
+        }
+      }
+    }
+  }
 }

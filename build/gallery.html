@@ -2,7 +2,7 @@
 <html class="no-js  page" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Все страницы</title>
+    <title>Галерея</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="page__inner">
-      <header class="page-header page-header--white" role="banner">
+      <header class="page-header" role="banner">
         <div class="page-header__inner">
           <nav class="navbar navbar--header">
             <div class="page-header__info">
@@ -364,20 +364,110 @@
       <div class="page__content">
         <main class="page__main-content" role="main">
           <div class="container">
-            <ul>
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="licenses.html">Лицензии и свидетельства</a></li>
-              <li><a href="review.html">Отзывы</a></li>
-              <li><a href="articles.html">Статьи</a></li>
-              <li><a href="article.html">Статья</a></li>
-              <li><a href="doctors.html">Доктора</a></li>
-              <li><a href="doctor.html">Доктор</a></li>
-              <li><a href="sales.html">Акции</a></li>
-              <li><a href="sales-article.html">Акции карточка</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="gallery.html">Галерея</a></li>
-            </ul>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb--gallery">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Галерея
+                </li>
+              </ol>
+            </nav>
+
+            <div class="view-article view-article--gallery">
+              <div class="h2 view-article__title text-center">
+                Галерея
+              </div>
+
+              <div class="view-article__content">
+                <div class="gallery">
+                  <div class="gallery__nav">
+                    <ul class="gallery__list">
+                      <li class="active">
+                        <a href="#">Все фотографии</a>
+                      </li>
+                      <li>
+                        <a href="#">Наша команда</a>
+                      </li>
+                      <li>
+                        <a href="#">Оборудование</a>
+                      </li>
+                      <li>
+                        <a href="#">Интерьер</a>
+                      </li>
+                      <li>
+                        <a href="#">Наши работы</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="gallery__content">
+                  <div class="gallery__pictures row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="gallery__pictures__img">
+                        <img src="img/card-promo-img3.jpg" class="img" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="gallery__pictures__img">
+                        <img src="img/card-promo-img1.jpg" class="img" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="gallery__pictures__img">
+                        <img src="img/card-promo-img2.jpg" class="img" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="gallery__pictures__img">
+                        <img src="img/card-promo-img3.jpg" class="img" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="gallery__pictures__img">
+                        <img src="img/card-promo-img4.jpg" class="img" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="gallery__pictures__img">
+                        <img src="img/card-promo-img4.jpg" class="img" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="gallery__pictures__img">
+                        <img src="img/card-promo-img4.jpg" class="img" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link page-link--prev" href="#">
+                      <img
+                        src="img/slider-pointer-left.png"
+                        class="icon"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link--next" href="#">
+                      <img
+                        src="img/slider-pointer-right.png"
+                        class="icon"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </main>
       </div>

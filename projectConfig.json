@@ -44,7 +44,8 @@
     "table": [],
     "pay-promo": [],
     "contact-form": [],
-    "form": []
+    "form": [],
+    "gallery": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
