@@ -17,6 +17,8 @@
 
   &:hover {
     #{$block-name}__img {
+      border-bottom-color: #ff9110;
+
       @include media-breakpoint-up(xl) {
         transform: scale(1.1);
       }

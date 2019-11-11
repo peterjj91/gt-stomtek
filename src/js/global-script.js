@@ -122,7 +122,7 @@ $(document).ready(function() {
         },
       },
       {
-        breakpoint: 400,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
           adaptiveHeight: true,
@@ -139,14 +139,21 @@ $(document).ready(function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 1050,
         settings: {
           slidesToShow: 3,
           adaptiveHeight: true,
         },
       },
       {
-        breakpoint: 400,
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          adaptiveHeight: true,
+        },
+      },
+      {
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           adaptiveHeight: true,

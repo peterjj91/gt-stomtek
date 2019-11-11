@@ -117,12 +117,12 @@
   }
 
   &--license {
-    background-color: #dde1e4;
     padding-top: 21px;
     padding-bottom: 24px;
 
     @include media-breakpoint-up(lg) {
       padding-top: 39px;
+      background-color: #dde1e4;
     }
 
     #{$block-name} {

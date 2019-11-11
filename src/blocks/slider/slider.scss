@@ -175,6 +175,13 @@
         height: auto;
       }
     }
+
+    &-for {
+      @include media-breakpoint-down(xl) {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
   }
 
   &-review {
