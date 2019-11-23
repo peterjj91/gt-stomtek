@@ -36,6 +36,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     fade: true,
     asNavFor: '.slider-full-nav',
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 991,

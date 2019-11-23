@@ -132,7 +132,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 85px;
+    height: 50px;
     padding: 10px 29px 10px 29px;
     border: none;
     border-left: 4px solid #fec07a;
@@ -142,6 +142,10 @@
     color: #515151;
     border-radius: 0px !important;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+
+    @include media-breakpoint-up(lg) {
+      height: 85px;
+    }
 
     &:hover,
     &:focus {

@@ -39,11 +39,14 @@
   }
 
   &__description {
-    padding-top: 14px;
+    padding-top: 22px;
 
     @include media-breakpoint-down(lg) {
       background-color: #f3f6f3;
       padding-bottom: 22px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 14px;
     }
     @include media-breakpoint-up(xl) {
       border-left: 3px solid #ff9200;

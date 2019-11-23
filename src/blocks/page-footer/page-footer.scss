@@ -160,6 +160,29 @@
         padding-top: 0;
       }
     }
+
+    &__social {
+      display: flex;
+      align-items: center;
+
+      @include media-breakpoint-down(lg) {
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      & > * {
+        @include media-breakpoint-up(lg) {
+          margin: 0px 15px;
+        }
+
+        &:first-child {
+          @include media-breakpoint-down(lg) {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
   }
 
   &__copyright {

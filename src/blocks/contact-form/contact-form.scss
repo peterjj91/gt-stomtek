@@ -17,3 +17,23 @@
     margin-top: 7px;
   }
 }
+
+.form-group {
+  position: relative;
+
+  // .form-control {
+  //   & + label {
+  //     pointer-events: none;
+  //     position: absolute;
+  //     // transform: translate(0%, -50%);
+  //     left: 13px;
+  //     top: 7px;
+  //     color: #7a828c;
+  //     margin: 0;
+  //   }
+
+  //   &:focus + label, &:active + label {
+  //     opacity: 0;
+  //   }
+  // }
+}

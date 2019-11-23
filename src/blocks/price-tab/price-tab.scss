@@ -4,7 +4,7 @@
 
   &__side {
     @include media-breakpoint-down(md) {
-      display: none;
+      // display: none;
     }
     @include media-breakpoint-up(md) {
       padding-top: 54px;
@@ -19,14 +19,14 @@
 
       .tab-pane {
         @include media-breakpoint-down(md) {
-          display: block;
-          opacity: 1;
-          margin-bottom: 70px;
+          // display: block;
+          // opacity: 1;
+          // margin-bottom: 70px;
         }
 
         &:last-child {
           @include media-breakpoint-down(md) {
-            margin-bottom: 0;
+            // margin-bottom: 0;
           }
         }
       }

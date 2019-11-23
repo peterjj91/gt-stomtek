@@ -42,7 +42,10 @@
               @@include('blocks/card-promo/card-promo--main.html')
 
               <div class="view-block__btn">
-                <a href="#" class="btn btn-primary">смотреть всё</a>
+                <a href="#" class="btn btn-primary">
+                  <span class="d-none d-lg-block">смотреть всё</span>
+                  <span class="d-lg-none">ещё услуги</span>
+                </a>
               </div>
             </div>
           </div>
@@ -131,14 +134,19 @@
           </div>
 
           <div class="view-block view-block--license">
-            <div class="container">
-              <div class="h2 view-block__title">Лицензии</div>
+            <div class="view-block--license--wrapper">
+              <div class="container">
+                <div class="h2 view-block__title">
+                  <span class="d-none d-lg-block">Лицензии</span>
+                  <span class="d-lg-none">Лицензии и свидетельства</span>
+                </div>
 
-              @@include('blocks/slider/slider--license.html')
-
-              <div class="view-block__btn">
-                <a href="#" class="btn btn-primary">Подробнее</a>
+                @@include('blocks/slider/slider--license.html')
               </div>
+            </div>
+
+            <div class="view-block__btn">
+              <a href="#" class="btn btn-primary">Подробнее</a>
             </div>
           </div>
 

@@ -110,4 +110,42 @@
   &-menu {
     border-radius: 0;
   }
+
+  &__price {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 30px;
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      font-size: 19px;
+      font-weight: bold;
+      background-color: #ff9110;
+      height: 46px;
+      color: white;
+      width: 100%;
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+      
+      &:after {
+        display: none;
+      }
+    }
+
+    .dropdown-menu {
+      border: none;
+
+      @include media-breakpoint-up(lg) {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
 }

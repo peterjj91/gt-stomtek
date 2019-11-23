@@ -178,14 +178,16 @@
 // custom
 .scroll-doctors {
   margin: -15px -15px 0px -15px;
-  padding-bottom: 5px;
   
   @include media-breakpoint-up(xl) {
     margin-top: -15px;
+    padding-bottom: 5px;
   }
 
   &__content {
-    padding-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 20px;
+    }
   }
 
   .ps__rail-y {

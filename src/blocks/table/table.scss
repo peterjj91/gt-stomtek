@@ -72,6 +72,14 @@
     white-space: nowrap;
   }
 
+  &__wrapper {
+    @include media-breakpoint-down(lg) {
+      overflow-x: auto;
+      // margin: 0px -15px;
+      // padding: 0px 15px;
+    }
+  }
+
   &--price {
     max-width: 750px;
     margin: 0 auto;
